@@ -20,6 +20,8 @@ namespace Reservar
             ventana_name.Text = this.Text;
         }
 
+        #region Estilo ventana
+
         //Variable que se va a utilizar para mover la ventana
         bool moverVentana = false;
 
@@ -81,5 +83,6 @@ namespace Reservar
             PictureBox pictureBox = (PictureBox)sender;
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
+        #endregion
     }
 }
