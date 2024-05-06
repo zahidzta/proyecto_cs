@@ -16,7 +16,8 @@ namespace Reservar
         {
             InitializeComponent();
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea; 
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            ventana_name.Text = this.Text;
         }
 
         //Variable que se va a utilizar para mover la ventana
