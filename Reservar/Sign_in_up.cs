@@ -18,7 +18,7 @@ namespace Reservar
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
-
+        #region Estilo Ventana
         private void Sign_in_up_Load(object sender, EventArgs e)
         {
             ventana_name.Text = this.Text;
@@ -85,6 +85,15 @@ namespace Reservar
             PictureBox pictureBox = (PictureBox)sender;
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
+        #endregion
+        private void lbl_cambiar_sign_up_MouseHover(object sender, EventArgs e)
+        {
+            lbl_cambiar_sign_up.ForeColor = Color.MediumSlateBlue;
+        }
 
+        private void lbl_cambiar_sign_up_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_cambiar_sign_up.ForeColor = Color.White;
+        }
     }
 }

@@ -347,6 +347,8 @@
             this.lbl_cambiar_sign_up.Size = new System.Drawing.Size(171, 13);
             this.lbl_cambiar_sign_up.TabIndex = 1;
             this.lbl_cambiar_sign_up.Text = "¿No tienes cuenta? Crea una aquí";
+            this.lbl_cambiar_sign_up.MouseLeave += new System.EventHandler(this.lbl_cambiar_sign_up_MouseLeave);
+            this.lbl_cambiar_sign_up.MouseHover += new System.EventHandler(this.lbl_cambiar_sign_up_MouseHover);
             // 
             // pictureBox1
             // 
