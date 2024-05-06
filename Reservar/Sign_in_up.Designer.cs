@@ -33,36 +33,39 @@
             this.ventana_name = new System.Windows.Forms.Label();
             this.cont_sign = new System.Windows.Forms.TableLayoutPanel();
             this.cont_sign_in = new System.Windows.Forms.TableLayoutPanel();
-            this.img_minimizar = new System.Windows.Forms.PictureBox();
-            this.img_maximizar = new System.Windows.Forms.PictureBox();
-            this.img_salir = new System.Windows.Forms.PictureBox();
             this.cont_logo = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox_email = new Reservar.My_controls.My_pictureBox();
             this.txtBox_email = new Reservar.My_controls.My_textBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.my_pictureBox1 = new Reservar.My_controls.My_pictureBox();
             this.textBox_password = new Reservar.My_controls.My_textBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_sign_in = new Reservar.My_controls.My_button();
+            this.lbl_cambiar_sign_up = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.my_pictureBox1 = new Reservar.My_controls.My_pictureBox();
+            this.pictureBox_email = new Reservar.My_controls.My_pictureBox();
+            this.img_minimizar = new System.Windows.Forms.PictureBox();
+            this.img_maximizar = new System.Windows.Forms.PictureBox();
+            this.img_salir = new System.Windows.Forms.PictureBox();
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.cont_sign.SuspendLayout();
             this.cont_sign_in.SuspendLayout();
+            this.cont_logo.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_email)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_salir)).BeginInit();
-            this.cont_logo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_email)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // control_bar
@@ -149,48 +152,6 @@
             this.cont_sign_in.Size = new System.Drawing.Size(463, 453);
             this.cont_sign_in.TabIndex = 0;
             // 
-            // img_minimizar
-            // 
-            this.img_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img_minimizar.Image = global::Reservar.Properties.Resources.minimizar_signo;
-            this.img_minimizar.Location = new System.Drawing.Point(3, 3);
-            this.img_minimizar.Name = "img_minimizar";
-            this.img_minimizar.Size = new System.Drawing.Size(31, 18);
-            this.img_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_minimizar.TabIndex = 0;
-            this.img_minimizar.TabStop = false;
-            this.img_minimizar.Click += new System.EventHandler(this.img_minimizar_Click);
-            this.img_minimizar.MouseLeave += new System.EventHandler(this.img_controls_MouseLeave);
-            this.img_minimizar.MouseHover += new System.EventHandler(this.img_controls_MouseHover);
-            // 
-            // img_maximizar
-            // 
-            this.img_maximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img_maximizar.Image = global::Reservar.Properties.Resources.maximizar;
-            this.img_maximizar.Location = new System.Drawing.Point(40, 3);
-            this.img_maximizar.Name = "img_maximizar";
-            this.img_maximizar.Size = new System.Drawing.Size(31, 18);
-            this.img_maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_maximizar.TabIndex = 1;
-            this.img_maximizar.TabStop = false;
-            this.img_maximizar.Click += new System.EventHandler(this.img_maximizar_Click);
-            this.img_maximizar.MouseLeave += new System.EventHandler(this.img_controls_MouseLeave);
-            this.img_maximizar.MouseHover += new System.EventHandler(this.img_controls_MouseHover);
-            // 
-            // img_salir
-            // 
-            this.img_salir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img_salir.Image = global::Reservar.Properties.Resources.salir;
-            this.img_salir.Location = new System.Drawing.Point(77, 3);
-            this.img_salir.Name = "img_salir";
-            this.img_salir.Size = new System.Drawing.Size(32, 18);
-            this.img_salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_salir.TabIndex = 2;
-            this.img_salir.TabStop = false;
-            this.img_salir.Click += new System.EventHandler(this.img_salir_Click);
-            this.img_salir.MouseLeave += new System.EventHandler(this.img_controls_MouseLeave);
-            this.img_salir.MouseHover += new System.EventHandler(this.img_controls_MouseHover);
-            // 
             // cont_logo
             // 
             this.cont_logo.ColumnCount = 2;
@@ -205,18 +166,6 @@
             this.cont_logo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.cont_logo.Size = new System.Drawing.Size(457, 129);
             this.cont_logo.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Reservar.Properties.Resources.coche_clasico;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -291,28 +240,12 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(391, 45);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
-            // pictureBox_email
-            // 
-            this.pictureBox_email.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox_email.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pictureBox_email.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox_email.BorderColor2 = System.Drawing.Color.HotPink;
-            this.pictureBox_email.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pictureBox_email.BorderSize = 1;
-            this.pictureBox_email.GradientAngle = 50F;
-            this.pictureBox_email.Location = new System.Drawing.Point(9, 3);
-            this.pictureBox_email.Name = "pictureBox_email";
-            this.pictureBox_email.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox_email.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_email.TabIndex = 0;
-            this.pictureBox_email.TabStop = false;
-            // 
             // txtBox_email
             // 
             this.txtBox_email.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBox_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
             this.txtBox_email.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtBox_email.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtBox_email.BorderFocusColor = System.Drawing.Color.DarkSlateBlue;
             this.txtBox_email.BorderRadius = 0;
             this.txtBox_email.BorderSize = 2;
             this.txtBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -345,28 +278,12 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(391, 45);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
-            // my_pictureBox1
-            // 
-            this.my_pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.my_pictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.my_pictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.my_pictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.my_pictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.my_pictureBox1.BorderSize = 1;
-            this.my_pictureBox1.GradientAngle = 50F;
-            this.my_pictureBox1.Location = new System.Drawing.Point(9, 3);
-            this.my_pictureBox1.Name = "my_pictureBox1";
-            this.my_pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.my_pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.my_pictureBox1.TabIndex = 0;
-            this.my_pictureBox1.TabStop = false;
-            // 
             // textBox_password
             // 
             this.textBox_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
             this.textBox_password.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_password.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_password.BorderFocusColor = System.Drawing.Color.DarkSlateBlue;
             this.textBox_password.BorderRadius = 0;
             this.textBox_password.BorderSize = 2;
             this.textBox_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -388,6 +305,8 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.btn_sign_in, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_cambiar_sign_up, 0, 1);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(-3, 317);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
@@ -395,6 +314,127 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(466, 136);
             this.tableLayoutPanel5.TabIndex = 2;
+            // 
+            // btn_sign_in
+            // 
+            this.btn_sign_in.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_sign_in.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_sign_in.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_sign_in.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_sign_in.BorderRadius = 20;
+            this.btn_sign_in.BorderSize = 0;
+            this.btn_sign_in.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_sign_in.FlatAppearance.BorderSize = 0;
+            this.btn_sign_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sign_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sign_in.ForeColor = System.Drawing.Color.White;
+            this.btn_sign_in.Location = new System.Drawing.Point(132, 14);
+            this.btn_sign_in.Name = "btn_sign_in";
+            this.btn_sign_in.Size = new System.Drawing.Size(201, 40);
+            this.btn_sign_in.TabIndex = 0;
+            this.btn_sign_in.Text = "Iniciar sesión";
+            this.btn_sign_in.TextColor = System.Drawing.Color.White;
+            this.btn_sign_in.UseVisualStyleBackColor = false;
+            // 
+            // lbl_cambiar_sign_up
+            // 
+            this.lbl_cambiar_sign_up.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_cambiar_sign_up.AutoSize = true;
+            this.lbl_cambiar_sign_up.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_cambiar_sign_up.ForeColor = System.Drawing.Color.White;
+            this.lbl_cambiar_sign_up.Location = new System.Drawing.Point(147, 68);
+            this.lbl_cambiar_sign_up.Name = "lbl_cambiar_sign_up";
+            this.lbl_cambiar_sign_up.Size = new System.Drawing.Size(171, 13);
+            this.lbl_cambiar_sign_up.TabIndex = 1;
+            this.lbl_cambiar_sign_up.Text = "¿No tienes cuenta? Crea una aquí";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Reservar.Properties.Resources.coche_clasico;
+            this.pictureBox1.Location = new System.Drawing.Point(99, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 123);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // my_pictureBox1
+            // 
+            this.my_pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.my_pictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.my_pictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.my_pictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.my_pictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.my_pictureBox1.BorderSize = 0;
+            this.my_pictureBox1.GradientAngle = 50F;
+            this.my_pictureBox1.Image = global::Reservar.Properties.Resources.iniciar_sesion;
+            this.my_pictureBox1.Location = new System.Drawing.Point(9, 3);
+            this.my_pictureBox1.Name = "my_pictureBox1";
+            this.my_pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.my_pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.my_pictureBox1.TabIndex = 0;
+            this.my_pictureBox1.TabStop = false;
+            // 
+            // pictureBox_email
+            // 
+            this.pictureBox_email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox_email.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pictureBox_email.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox_email.BorderColor2 = System.Drawing.Color.HotPink;
+            this.pictureBox_email.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pictureBox_email.BorderSize = 0;
+            this.pictureBox_email.GradientAngle = 50F;
+            this.pictureBox_email.Image = global::Reservar.Properties.Resources.correo_electronico_vacio;
+            this.pictureBox_email.Location = new System.Drawing.Point(9, 3);
+            this.pictureBox_email.Name = "pictureBox_email";
+            this.pictureBox_email.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox_email.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_email.TabIndex = 0;
+            this.pictureBox_email.TabStop = false;
+            // 
+            // img_minimizar
+            // 
+            this.img_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_minimizar.Image = global::Reservar.Properties.Resources.minimizar_signo;
+            this.img_minimizar.Location = new System.Drawing.Point(3, 3);
+            this.img_minimizar.Name = "img_minimizar";
+            this.img_minimizar.Size = new System.Drawing.Size(31, 18);
+            this.img_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_minimizar.TabIndex = 0;
+            this.img_minimizar.TabStop = false;
+            this.img_minimizar.Click += new System.EventHandler(this.img_minimizar_Click);
+            this.img_minimizar.MouseLeave += new System.EventHandler(this.img_controls_MouseLeave);
+            this.img_minimizar.MouseHover += new System.EventHandler(this.img_controls_MouseHover);
+            // 
+            // img_maximizar
+            // 
+            this.img_maximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_maximizar.Image = global::Reservar.Properties.Resources.maximizar;
+            this.img_maximizar.Location = new System.Drawing.Point(40, 3);
+            this.img_maximizar.Name = "img_maximizar";
+            this.img_maximizar.Size = new System.Drawing.Size(31, 18);
+            this.img_maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_maximizar.TabIndex = 1;
+            this.img_maximizar.TabStop = false;
+            this.img_maximizar.Click += new System.EventHandler(this.img_maximizar_Click);
+            this.img_maximizar.MouseLeave += new System.EventHandler(this.img_controls_MouseLeave);
+            this.img_maximizar.MouseHover += new System.EventHandler(this.img_controls_MouseHover);
+            // 
+            // img_salir
+            // 
+            this.img_salir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_salir.Image = global::Reservar.Properties.Resources.salir;
+            this.img_salir.Location = new System.Drawing.Point(77, 3);
+            this.img_salir.Name = "img_salir";
+            this.img_salir.Size = new System.Drawing.Size(32, 18);
+            this.img_salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_salir.TabIndex = 2;
+            this.img_salir.TabStop = false;
+            this.img_salir.Click += new System.EventHandler(this.img_salir_Click);
+            this.img_salir.MouseLeave += new System.EventHandler(this.img_controls_MouseLeave);
+            this.img_salir.MouseHover += new System.EventHandler(this.img_controls_MouseHover);
             // 
             // Sign_in_up
             // 
@@ -415,18 +455,20 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.cont_sign.ResumeLayout(false);
             this.cont_sign_in.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_maximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_salir)).EndInit();
             this.cont_logo.ResumeLayout(false);
             this.cont_logo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_email)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_email)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_maximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_salir)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -454,6 +496,8 @@
         private My_controls.My_pictureBox my_pictureBox1;
         private My_controls.My_textBox textBox_password;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private My_controls.My_button btn_sign_in;
+        private System.Windows.Forms.Label lbl_cambiar_sign_up;
     }
 }
 

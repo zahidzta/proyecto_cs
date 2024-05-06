@@ -127,6 +127,12 @@
   <data name="coche_clasico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coche-clasico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="correo_electronico_vacio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correo-electronico-vacio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iniciar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iniciar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="maximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

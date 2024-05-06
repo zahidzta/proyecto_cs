@@ -134,5 +134,11 @@
   <ItemGroup>
     <None Include="Resources\coche-clasico.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo-electronico-vacio.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

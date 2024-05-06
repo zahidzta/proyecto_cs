@@ -93,6 +93,26 @@ namespace Reservar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap correo_electronico_vacio {
+            get {
+                object obj = ResourceManager.GetObject("correo_electronico_vacio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iniciar_sesion {
+            get {
+                object obj = ResourceManager.GetObject("iniciar_sesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximizar {
             get {
                 object obj = ResourceManager.GetObject("maximizar", resourceCulture);
