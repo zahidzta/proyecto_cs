@@ -1,6 +1,6 @@
 ﻿namespace Reservar
 {
-    partial class Ventana_base
+    partial class Sign_in_up
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -121,7 +121,7 @@
             // 
             // ventana_name
             // 
-            this.ventana_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.ventana_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.ventana_name.AutoSize = true;
             this.ventana_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,7 +134,7 @@
             this.ventana_name.Text = "Ventana_name";
             this.ventana_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Ventana_base
+            // Sign_in_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,9 +143,10 @@
             this.Controls.Add(this.control_bar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Ventana_base";
+            this.Name = "Sign_in_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ventana_base";
+            this.Text = "Sign_in_up";
+            this.Load += new System.EventHandler(this.Sign_in_up_Load);
             this.control_bar.ResumeLayout(false);
             this.control_bar.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
