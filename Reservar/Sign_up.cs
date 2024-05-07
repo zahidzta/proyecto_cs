@@ -86,6 +86,8 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
+
+        //Se cambia el estilo del label (último label) al momento de pasar el mouse por encima
         private void lbl_cambiar_sign_up_MouseHover(object sender, EventArgs e)
         {
             lbl_cambiar_sign_up.ForeColor = Color.MediumSlateBlue;
@@ -98,6 +100,33 @@ namespace Reservar
 
         private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btn_sign_in_Click(object sender, EventArgs e)
+        {
+            //Se muestra una alerta en el caso de que falten campos por llenar
+            if (txtBox_nombre.Texts == "" || txtBox_email.Texts == "" || txtBox_password.Texts == "" || txtBox_confirmPassword.Texts == "")
+            {
+                label_errores.ForeColor = Color.DarkRed;
+                label_errores.Text = "Faltan campos por llenar";
+            }
+            //Se cambia el color del borde de los inputs en el caso de que esten vacios
+            if (txtBox_nombre.Texts == "") txtBox_nombre.BorderColor = Color.DarkRed;
+            else txtBox_nombre.BorderColor = Color.MediumSlateBlue;
+            if (txtBox_email.Texts == "") txtBox_email.BorderColor = Color.DarkRed;
+            else txtBox_email.BorderColor = Color.MediumSlateBlue;
+            if (txtBox_password.Texts == "") txtBox_password.BorderColor = Color.DarkRed;
+            else txtBox_password.BorderColor = Color.MediumSlateBlue;
+            if (txtBox_confirmPassword.Texts == "") txtBox_confirmPassword.BorderColor = Color.DarkRed;
+            else txtBox_confirmPassword.BorderColor = Color.MediumSlateBlue;
+
+            //Se valida que las contraseñas sean iguales
+            if ((txtBox_password.Texts != txtBox_confirmPassword.Texts) && (txtBox_password.Texts != "" || txtBox_confirmPassword.Texts != ""))
+            {
+                txtBox_confirmPassword.BorderColor = Color.DarkRed;
+                txtBox_password.BorderColor = Color.DarkRed;
+                MessageBox.Show("Las contraseñas no coinciden");
+            }
         }
     }
 }

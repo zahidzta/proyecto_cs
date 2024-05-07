@@ -54,7 +54,7 @@
             this.my_pictureBox2 = new Reservar.My_controls.My_pictureBox();
             this.txtBox_email = new Reservar.My_controls.My_textBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_errores = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.my_pictureBox1 = new Reservar.My_controls.My_pictureBox();
             this.txtBox_nombre = new Reservar.My_controls.My_textBox();
@@ -278,6 +278,7 @@
             this.btn_sign_in.Text = "Crear cuenta";
             this.btn_sign_in.TextColor = System.Drawing.Color.White;
             this.btn_sign_in.UseVisualStyleBackColor = false;
+            this.btn_sign_in.Click += new System.EventHandler(this.btn_sign_in_Click);
             // 
             // lbl_cambiar_sign_up
             // 
@@ -302,7 +303,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label_errores, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 56);
@@ -494,16 +495,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Crear cuenta";
             // 
-            // label3
+            // label_errores
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Location = new System.Drawing.Point(20, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(239, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Por favor llene los campos para crear una cuenta";
+            this.label_errores.AutoSize = true;
+            this.label_errores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_errores.Location = new System.Drawing.Point(20, 38);
+            this.label_errores.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label_errores.Name = "label_errores";
+            this.label_errores.Size = new System.Drawing.Size(239, 13);
+            this.label_errores.TabIndex = 1;
+            this.label_errores.Text = "Por favor llene los campos para crear una cuenta";
             // 
             // tableLayoutPanel3
             // 
@@ -620,7 +621,7 @@
         private System.Windows.Forms.Label lbl_cambiar_sign_up;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_errores;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private My_controls.My_pictureBox my_pictureBox1;
         private My_controls.My_textBox txtBox_nombre;
