@@ -98,8 +98,12 @@ namespace Reservar
             lbl_cambiar_sign_up.ForeColor = Color.White;
         }
 
+        //Para cambiar al formulario de iniciar sesión
         private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
         {
+            Sign_in_up iniciarSesion = new Sign_in_up();
+            iniciarSesion.Show();
+            this.Hide();
         }
 
         private void btn_sign_in_Click(object sender, EventArgs e)

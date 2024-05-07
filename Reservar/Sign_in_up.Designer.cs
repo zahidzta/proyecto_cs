@@ -453,7 +453,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Sign_in_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign in";
+            this.Text = "Iniciar sesión";
             this.Load += new System.EventHandler(this.Sign_in_up_Load);
             this.control_bar.ResumeLayout(false);
             this.control_bar.PerformLayout();

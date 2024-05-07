@@ -96,10 +96,15 @@ namespace Reservar
             lbl_cambiar_sign_up.ForeColor = Color.White;
         }
 
+        //Para cambiar al formulario de crear cuenta
         private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
         {
+            Sign_up crearCuenta = new Sign_up();
+            crearCuenta.Show();
+            this.Hide();
         }
 
+        //Se informa que los campos no esten vacios
         private void btn_sign_in_Click(object sender, EventArgs e)
         {
             if (txtBox_email.Texts == "" || textBox_password.Texts == "")
