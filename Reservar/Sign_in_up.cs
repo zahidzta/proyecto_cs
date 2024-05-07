@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace Reservar
 {
-    public partial class Ventana_base : Form
+    public partial class Sign_in_up : Form
     {
-        public Ventana_base()
+        public Sign_in_up()
         {
             InitializeComponent();
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+        #region Estilo Ventana
+        private void Sign_in_up_Load(object sender, EventArgs e)
+        {
             ventana_name.Text = this.Text;
         }
-
-        #region Estilo ventana
 
         //Variable que se va a utilizar para mover la ventana
         bool moverVentana = false;
@@ -84,5 +86,18 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
+        private void lbl_cambiar_sign_up_MouseHover(object sender, EventArgs e)
+        {
+            lbl_cambiar_sign_up.ForeColor = Color.MediumSlateBlue;
+        }
+
+        private void lbl_cambiar_sign_up_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_cambiar_sign_up.ForeColor = Color.White;
+        }
+
+        private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
