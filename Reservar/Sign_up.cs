@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reservar
 {
-    public partial class Sign_in_up : Form
+    public partial class Sign_up : Form
     {
-        public Sign_in_up()
+        public Sign_up()
         {
             InitializeComponent();
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
@@ -86,6 +86,8 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
+
+        //Se cambia el estilo del label (último label) al momento de pasar el mouse por encima
         private void lbl_cambiar_sign_up_MouseHover(object sender, EventArgs e)
         {
             lbl_cambiar_sign_up.ForeColor = Color.MediumSlateBlue;
@@ -96,27 +98,39 @@ namespace Reservar
             lbl_cambiar_sign_up.ForeColor = Color.White;
         }
 
-        //Para cambiar al formulario de crear cuenta
+        //Para cambiar al formulario de iniciar sesión
         private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
         {
-            Sign_up crearCuenta = new Sign_up();
-            crearCuenta.Show();
+            Sign_in_up iniciarSesion = new Sign_in_up();
+            iniciarSesion.Show();
             this.Hide();
         }
 
-        //Se informa que los campos no esten vacios
         private void btn_sign_in_Click(object sender, EventArgs e)
         {
-            if (txtBox_email.Texts == "" || textBox_password.Texts == "")
+            //Se muestra una alerta en el caso de que falten campos por llenar
+            if (txtBox_nombre.Texts == "" || txtBox_email.Texts == "" || txtBox_password.Texts == "" || txtBox_confirmPassword.Texts == "")
             {
                 label_errores.ForeColor = Color.DarkRed;
                 label_errores.Text = "Faltan campos por llenar";
             }
-
+            //Se cambia el color del borde de los inputs en el caso de que esten vacios
+            if (txtBox_nombre.Texts == "") txtBox_nombre.BorderColor = Color.DarkRed;
+            else txtBox_nombre.BorderColor = Color.MediumSlateBlue;
             if (txtBox_email.Texts == "") txtBox_email.BorderColor = Color.DarkRed;
             else txtBox_email.BorderColor = Color.MediumSlateBlue;
-            if (textBox_password.Texts == "") textBox_password.BorderColor = Color.DarkRed;
-            else textBox_password.BorderColor = Color.MediumSlateBlue;
+            if (txtBox_password.Texts == "") txtBox_password.BorderColor = Color.DarkRed;
+            else txtBox_password.BorderColor = Color.MediumSlateBlue;
+            if (txtBox_confirmPassword.Texts == "") txtBox_confirmPassword.BorderColor = Color.DarkRed;
+            else txtBox_confirmPassword.BorderColor = Color.MediumSlateBlue;
+
+            //Se valida que las contraseñas sean iguales
+            if ((txtBox_password.Texts != txtBox_confirmPassword.Texts) && (txtBox_password.Texts != "" || txtBox_confirmPassword.Texts != ""))
+            {
+                txtBox_confirmPassword.BorderColor = Color.DarkRed;
+                txtBox_password.BorderColor = Color.DarkRed;
+                MessageBox.Show("Las contraseñas no coinciden");
+            }
         }
     }
 }
