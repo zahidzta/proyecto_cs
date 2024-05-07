@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana_base));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_page));
             this.control_bar = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.img_minimizar = new System.Windows.Forms.PictureBox();
@@ -55,7 +55,7 @@
             this.control_bar.Name = "control_bar";
             this.control_bar.RowCount = 1;
             this.control_bar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.control_bar.Size = new System.Drawing.Size(469, 30);
+            this.control_bar.Size = new System.Drawing.Size(750, 30);
             this.control_bar.TabIndex = 0;
             this.control_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.control_bar_MouseDown);
             this.control_bar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.control_bar_MouseMove);
@@ -71,7 +71,7 @@
             this.tableLayoutPanel2.Controls.Add(this.img_minimizar, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.img_maximizar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.img_salir, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(354, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(635, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -122,7 +122,7 @@
             // 
             // ventana_name
             // 
-            this.ventana_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.ventana_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.ventana_name.AutoSize = true;
             this.ventana_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,19 +135,19 @@
             this.ventana_name.Text = "Ventana_name";
             this.ventana_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Ventana_base
+            // Main_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(26)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(469, 489);
+            this.ClientSize = new System.Drawing.Size(750, 550);
             this.Controls.Add(this.control_bar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Ventana_base";
+            this.Name = "Main_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ventana_base";
+            this.Text = "Lorem Ipsum";
             this.control_bar.ResumeLayout(false);
             this.control_bar.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

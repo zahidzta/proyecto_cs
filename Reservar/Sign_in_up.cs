@@ -124,7 +124,9 @@ namespace Reservar
             //Se abre la ventana principal en el caso de que los campos sean correctos
             if (valoreCorrectos)
             {
-
+                Main_page ventanaPrincipal = new Main_page();
+                ventanaPrincipal.Show();
+                this.Hide();
             }
         }
     }
