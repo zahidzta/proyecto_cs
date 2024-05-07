@@ -99,5 +99,19 @@ namespace Reservar
         private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
         {
         }
+
+        private void btn_sign_in_Click(object sender, EventArgs e)
+        {
+            if (txtBox_email.Texts == "" || textBox_password.Texts == "")
+            {
+                label_errores.ForeColor = Color.DarkRed;
+                label_errores.Text = "Faltan campos por llenar";
+            }
+
+            if (txtBox_email.Texts == "") txtBox_email.BorderColor = Color.DarkRed;
+            else txtBox_email.BorderColor = Color.MediumSlateBlue;
+            if (textBox_password.Texts == "") textBox_password.BorderColor = Color.DarkRed;
+            else textBox_password.BorderColor = Color.MediumSlateBlue;
+        }
     }
 }
