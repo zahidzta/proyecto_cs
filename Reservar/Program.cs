@@ -16,7 +16,7 @@ namespace Reservar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ventana_base());
+            Application.Run(new Sign_up());
         }
     }
 }
