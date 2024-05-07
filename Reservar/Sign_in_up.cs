@@ -95,5 +95,9 @@ namespace Reservar
         {
             lbl_cambiar_sign_up.ForeColor = Color.White;
         }
+
+        private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -122,9 +122,8 @@
             // cont_sign
             // 
             this.cont_sign.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cont_sign.ColumnCount = 2;
-            this.cont_sign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.cont_sign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
+            this.cont_sign.ColumnCount = 1;
+            this.cont_sign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.cont_sign.Controls.Add(this.cont_sign_in, 0, 0);
             this.cont_sign.Location = new System.Drawing.Point(0, 30);
             this.cont_sign.Name = "cont_sign";
@@ -347,6 +346,7 @@
             this.lbl_cambiar_sign_up.Size = new System.Drawing.Size(171, 13);
             this.lbl_cambiar_sign_up.TabIndex = 1;
             this.lbl_cambiar_sign_up.Text = "¿No tienes cuenta? Crea una aquí";
+            this.lbl_cambiar_sign_up.Click += new System.EventHandler(this.lbl_cambiar_sign_up_Click);
             this.lbl_cambiar_sign_up.MouseLeave += new System.EventHandler(this.lbl_cambiar_sign_up_MouseLeave);
             this.lbl_cambiar_sign_up.MouseHover += new System.EventHandler(this.lbl_cambiar_sign_up_MouseHover);
             // 
