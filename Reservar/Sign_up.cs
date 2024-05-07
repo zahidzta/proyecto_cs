@@ -108,11 +108,14 @@ namespace Reservar
 
         private void btn_sign_in_Click(object sender, EventArgs e)
         {
+            //variable para validar que los campos esten llenos correctamente
+            bool valoresCorrectos = true;
             //Se muestra una alerta en el caso de que falten campos por llenar
             if (txtBox_nombre.Texts == "" || txtBox_email.Texts == "" || txtBox_password.Texts == "" || txtBox_confirmPassword.Texts == "")
             {
                 label_errores.ForeColor = Color.DarkRed;
                 label_errores.Text = "Faltan campos por llenar";
+                valoresCorrectos = false;
             }
             //Se cambia el color del borde de los inputs en el caso de que esten vacios
             if (txtBox_nombre.Texts == "") txtBox_nombre.BorderColor = Color.DarkRed;
@@ -130,6 +133,13 @@ namespace Reservar
                 txtBox_confirmPassword.BorderColor = Color.DarkRed;
                 txtBox_password.BorderColor = Color.DarkRed;
                 MessageBox.Show("Las contraseñas no coinciden");
+                valoresCorrectos = false;
+            }
+
+            //Si los campos son correctos entonces se abre la ventana principal
+            if (valoresCorrectos)
+            {
+
             }
         }
     }

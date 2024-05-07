@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace Reservar
 {
-    public partial class Sign_in_up : Form
+    public partial class Main_page : Form
     {
-        public Sign_in_up()
+        public Main_page()
         {
             InitializeComponent();
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-        }
-        #region Estilo Ventana
-        private void Sign_in_up_Load(object sender, EventArgs e)
-        {
             ventana_name.Text = this.Text;
         }
+
+        #region Estilo ventana
 
         //Variable que se va a utilizar para mover la ventana
         bool moverVentana = false;
@@ -86,46 +84,5 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
-        private void lbl_cambiar_sign_up_MouseHover(object sender, EventArgs e)
-        {
-            lbl_cambiar_sign_up.ForeColor = Color.MediumSlateBlue;
-        }
-
-        private void lbl_cambiar_sign_up_MouseLeave(object sender, EventArgs e)
-        {
-            lbl_cambiar_sign_up.ForeColor = Color.White;
-        }
-
-        //Para cambiar al formulario de crear cuenta
-        private void lbl_cambiar_sign_up_Click(object sender, EventArgs e)
-        {
-            Sign_up crearCuenta = new Sign_up();
-            crearCuenta.Show();
-            this.Hide();
-        }
-
-        //Se informa que los campos no esten vacios
-        private void btn_sign_in_Click(object sender, EventArgs e)
-        {
-            bool valoreCorrectos = true;
-
-            if (txtBox_email.Texts == "" || textBox_password.Texts == "")
-            {
-                label_errores.ForeColor = Color.DarkRed;
-                label_errores.Text = "Faltan campos por llenar";
-                valoreCorrectos = false;
-            }
-
-            if (txtBox_email.Texts == "") txtBox_email.BorderColor = Color.DarkRed;
-            else txtBox_email.BorderColor = Color.MediumSlateBlue;
-            if (textBox_password.Texts == "") textBox_password.BorderColor = Color.DarkRed;
-            else textBox_password.BorderColor = Color.MediumSlateBlue;
-
-            //Se abre la ventana principal en el caso de que los campos sean correctos
-            if (valoreCorrectos)
-            {
-
-            }
-        }
     }
 }
