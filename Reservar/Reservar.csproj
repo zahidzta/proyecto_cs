@@ -140,5 +140,8 @@
   <ItemGroup>
     <None Include="Resources\correo-electronico-vacio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro-deportivo.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_in_up));
             this.control_bar = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.ventana_name = new System.Windows.Forms.Label();
@@ -36,12 +37,12 @@
             this.cont_logo = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox_password = new Reservar.My_controls.My_textBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtBox_email = new Reservar.My_controls.My_textBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox_password = new Reservar.My_controls.My_textBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_sign_in = new Reservar.My_controls.My_button();
             this.lbl_cambiar_sign_up = new System.Windows.Forms.Label();
@@ -57,8 +58,8 @@
             this.cont_sign_in.SuspendLayout();
             this.cont_logo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).BeginInit();
@@ -148,7 +149,7 @@
             this.cont_sign_in.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.cont_sign_in.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.cont_sign_in.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.cont_sign_in.Size = new System.Drawing.Size(463, 453);
+            this.cont_sign_in.Size = new System.Drawing.Size(463, 452);
             this.cont_sign_in.TabIndex = 0;
             // 
             // cont_logo
@@ -189,78 +190,15 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 138);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 138);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(463, 181);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(457, 174);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(20, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 40);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Inicia sesión";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Location = new System.Drawing.Point(20, 40);
-            this.label3.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Por favor inicie sesión para continuar";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox_email, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtBox_email, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(36, 67);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(391, 45);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // txtBox_email
-            // 
-            this.txtBox_email.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBox_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
-            this.txtBox_email.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtBox_email.BorderFocusColor = System.Drawing.Color.DarkSlateBlue;
-            this.txtBox_email.BorderRadius = 0;
-            this.txtBox_email.BorderSize = 2;
-            this.txtBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_email.ForeColor = System.Drawing.Color.White;
-            this.txtBox_email.Location = new System.Drawing.Point(78, 7);
-            this.txtBox_email.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBox_email.Multiline = false;
-            this.txtBox_email.Name = "txtBox_email";
-            this.txtBox_email.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtBox_email.PasswordChar = false;
-            this.txtBox_email.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtBox_email.PlaceholderText = "Email";
-            this.txtBox_email.Size = new System.Drawing.Size(292, 31);
-            this.txtBox_email.TabIndex = 1;
-            this.txtBox_email.Texts = "";
-            this.txtBox_email.UnderlinedStyle = true;
             // 
             // tableLayoutPanel4
             // 
@@ -270,7 +208,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel4.Controls.Add(this.my_pictureBox1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.textBox_password, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(36, 128);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(33, 122);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -300,18 +238,81 @@
             this.textBox_password.Texts = "";
             this.textBox_password.UnderlinedStyle = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(20, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 38);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Inicia sesión";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label3.Location = new System.Drawing.Point(20, 38);
+            this.label3.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Por favor inicie sesión para continuar";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox_email, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtBox_email, 1, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(33, 63);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(391, 45);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // txtBox_email
+            // 
+            this.txtBox_email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBox_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
+            this.txtBox_email.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtBox_email.BorderFocusColor = System.Drawing.Color.DarkSlateBlue;
+            this.txtBox_email.BorderRadius = 0;
+            this.txtBox_email.BorderSize = 2;
+            this.txtBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_email.ForeColor = System.Drawing.Color.White;
+            this.txtBox_email.Location = new System.Drawing.Point(78, 7);
+            this.txtBox_email.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBox_email.Multiline = false;
+            this.txtBox_email.Name = "txtBox_email";
+            this.txtBox_email.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBox_email.PasswordChar = false;
+            this.txtBox_email.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtBox_email.PlaceholderText = "Email";
+            this.txtBox_email.Size = new System.Drawing.Size(292, 31);
+            this.txtBox_email.TabIndex = 1;
+            this.txtBox_email.Texts = "";
+            this.txtBox_email.UnderlinedStyle = true;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.btn_sign_in, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.lbl_cambiar_sign_up, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(-3, 317);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 318);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(466, 136);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(457, 131);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // btn_sign_in
@@ -327,7 +328,7 @@
             this.btn_sign_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sign_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sign_in.ForeColor = System.Drawing.Color.White;
-            this.btn_sign_in.Location = new System.Drawing.Point(132, 14);
+            this.btn_sign_in.Location = new System.Drawing.Point(128, 12);
             this.btn_sign_in.Name = "btn_sign_in";
             this.btn_sign_in.Size = new System.Drawing.Size(201, 40);
             this.btn_sign_in.TabIndex = 0;
@@ -341,7 +342,7 @@
             this.lbl_cambiar_sign_up.AutoSize = true;
             this.lbl_cambiar_sign_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_cambiar_sign_up.ForeColor = System.Drawing.Color.White;
-            this.lbl_cambiar_sign_up.Location = new System.Drawing.Point(147, 68);
+            this.lbl_cambiar_sign_up.Location = new System.Drawing.Point(143, 65);
             this.lbl_cambiar_sign_up.Name = "lbl_cambiar_sign_up";
             this.lbl_cambiar_sign_up.Size = new System.Drawing.Size(171, 13);
             this.lbl_cambiar_sign_up.TabIndex = 1;
@@ -448,6 +449,7 @@
             this.Controls.Add(this.control_bar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Sign_in_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign in";
@@ -461,8 +463,8 @@
             this.cont_logo.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
