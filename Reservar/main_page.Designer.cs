@@ -35,11 +35,13 @@
             this.img_maximizar = new System.Windows.Forms.PictureBox();
             this.img_salir = new System.Windows.Forms.PictureBox();
             this.ventana_name = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_salir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // control_bar
@@ -135,12 +137,23 @@
             this.ventana_name.Text = "Ventana_name";
             this.ventana_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Reservar.Properties.Resources.coche_clasico;
+            this.pictureBox1.Location = new System.Drawing.Point(83, 141);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(159, 155);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(26)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(750, 550);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.control_bar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -154,6 +167,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_salir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -166,6 +180,7 @@
         private System.Windows.Forms.PictureBox img_maximizar;
         private System.Windows.Forms.PictureBox img_salir;
         private System.Windows.Forms.Label ventana_name;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
