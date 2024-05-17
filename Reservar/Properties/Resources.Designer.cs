@@ -159,5 +159,25 @@ namespace Reservar.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_12_at_19_15_08 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-12 at 19.15.08", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_12_at_19_18_28 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-12 at 19.18.28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

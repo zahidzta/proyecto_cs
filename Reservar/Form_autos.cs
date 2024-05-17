@@ -12,6 +12,7 @@ namespace Reservar
 {
     public partial class Form_autos : Form
     {
+        int aviso = 0;
         public Form_autos()
         {
             InitializeComponent();
@@ -86,5 +87,112 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Modelo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void my_botonSalir_Click(object sender, EventArgs e)
+        {
+            Main_page main_Page = new Main_page();
+            main_Page.Show();
+            this.Hide();
+            
+        }
+
+        private void my_radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = true;
+            aviso = 2;
+        }
+
+        private void my_radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void my_radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            my_textBoxOtro.Visible = false;
+            aviso = 1;
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void my_botonAceptar_Click(object sender, EventArgs e)
+        {
+            //Llenar todos los espacios
+            if (string.IsNullOrWhiteSpace(my_modelo.Texts))
+            {
+                MessageBox.Show("Error, llena todos los espacios.");
+            }
+            else if (string.IsNullOrWhiteSpace(my_anio.Texts))
+            {
+                MessageBox.Show("Error, llena todos los espacios.");
+            }
+            else if (string.IsNullOrWhiteSpace(my_color.Texts))
+            {
+                MessageBox.Show("Error, llena todos los espacios.");
+            }
+            else if (string.IsNullOrWhiteSpace(my_placas.Texts))
+            {
+                MessageBox.Show("Error, llena todos los espacios.");
+            }else if(aviso == 2)
+            {
+                if (string.IsNullOrWhiteSpace(my_textBoxOtro.Texts))
+                {
+                    MessageBox.Show("Error, llena todos los espacios;");
+                }
+            }else if(aviso == 0)
+            {
+                MessageBox.Show("Error, llena todos los espacios");
+            }
+        }
     }
 }
