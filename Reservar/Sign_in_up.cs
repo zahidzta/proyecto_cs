@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.IO;
 
 namespace Reservar
 {
@@ -104,6 +106,31 @@ namespace Reservar
             this.Hide();
         }
 
+        private bool Iniciar_sesion(string correo, string password)
+        {
+
+            string filePath = "xmlUsers.xml";
+            XmlDocument xmlDoc = new XmlDocument();
+
+            xmlDoc.Load(filePath);
+            XmlNodeList users = xmlDoc.SelectNodes("/Users/User");
+
+            foreach (XmlNode user in users)
+            {
+
+                if (correo == user.SelectSingleNode("correo").InnerText && password == user.SelectSingleNode("password").InnerText)
+                {
+
+                    return true;
+                }
+
+            }
+            MessageBox.Show("Datos Incorrectos");
+            return false;
+
+
+        }
+
         //Se informa que los campos no esten vacios
         private void btn_sign_in_Click(object sender, EventArgs e)
         {
@@ -116,18 +143,19 @@ namespace Reservar
                 valoreCorrectos = false;
             }
 
-            if (txtBox_email.Texts == "") txtBox_email.BorderColor = Color.DarkRed;
-            else txtBox_email.BorderColor = Color.MediumSlateBlue;
-            if (textBox_password.Texts == "") textBox_password.BorderColor = Color.DarkRed;
-            else textBox_password.BorderColor = Color.MediumSlateBlue;
-
             //Se abre la ventana principal en el caso de que los campos sean correctos
-            if (valoreCorrectos)
+            if (valoreCorrectos && Iniciar_sesion(txtBox_email.Texts, textBox_password.Texts))
             {
+
                 Main_page ventanaPrincipal = new Main_page();
                 ventanaPrincipal.Show();
                 this.Hide();
             }
+        }
+
+        private void txtBox_email__TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
