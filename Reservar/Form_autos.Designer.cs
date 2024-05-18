@@ -88,11 +88,10 @@
             this.control_bar.Controls.Add(this.ventana_name, 0, 0);
             this.control_bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.control_bar.Location = new System.Drawing.Point(0, 0);
-            this.control_bar.Margin = new System.Windows.Forms.Padding(4);
             this.control_bar.Name = "control_bar";
             this.control_bar.RowCount = 1;
             this.control_bar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.control_bar.Size = new System.Drawing.Size(625, 37);
+            this.control_bar.Size = new System.Drawing.Size(469, 30);
             this.control_bar.TabIndex = 0;
             this.control_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.control_bar_MouseDown);
             this.control_bar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.control_bar_MouseMove);
@@ -108,22 +107,20 @@
             this.tableLayoutPanel2.Controls.Add(this.img_minimizar, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.img_maximizar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.img_salir, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(472, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(354, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(149, 29);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(112, 24);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // img_minimizar
             // 
             this.img_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_minimizar.Image = global::Reservar.Properties.Resources.minimizar_signo;
-            this.img_minimizar.Location = new System.Drawing.Point(4, 4);
-            this.img_minimizar.Margin = new System.Windows.Forms.Padding(4);
+            this.img_minimizar.Location = new System.Drawing.Point(3, 3);
             this.img_minimizar.Name = "img_minimizar";
-            this.img_minimizar.Size = new System.Drawing.Size(41, 21);
+            this.img_minimizar.Size = new System.Drawing.Size(31, 17);
             this.img_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_minimizar.TabIndex = 0;
             this.img_minimizar.TabStop = false;
@@ -135,10 +132,9 @@
             // 
             this.img_maximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_maximizar.Image = global::Reservar.Properties.Resources.maximizar;
-            this.img_maximizar.Location = new System.Drawing.Point(53, 4);
-            this.img_maximizar.Margin = new System.Windows.Forms.Padding(4);
+            this.img_maximizar.Location = new System.Drawing.Point(40, 3);
             this.img_maximizar.Name = "img_maximizar";
-            this.img_maximizar.Size = new System.Drawing.Size(41, 21);
+            this.img_maximizar.Size = new System.Drawing.Size(31, 17);
             this.img_maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_maximizar.TabIndex = 1;
             this.img_maximizar.TabStop = false;
@@ -150,10 +146,9 @@
             // 
             this.img_salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_salir.Image = global::Reservar.Properties.Resources.salir;
-            this.img_salir.Location = new System.Drawing.Point(102, 4);
-            this.img_salir.Margin = new System.Windows.Forms.Padding(4);
+            this.img_salir.Location = new System.Drawing.Point(77, 3);
             this.img_salir.Name = "img_salir";
-            this.img_salir.Size = new System.Drawing.Size(43, 21);
+            this.img_salir.Size = new System.Drawing.Size(32, 17);
             this.img_salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_salir.TabIndex = 2;
             this.img_salir.TabStop = false;
@@ -168,10 +163,10 @@
             this.ventana_name.AutoSize = true;
             this.ventana_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventana_name.ForeColor = System.Drawing.Color.White;
-            this.ventana_name.Location = new System.Drawing.Point(13, 0);
-            this.ventana_name.Margin = new System.Windows.Forms.Padding(13, 0, 4, 0);
+            this.ventana_name.Location = new System.Drawing.Point(10, 0);
+            this.ventana_name.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.ventana_name.Name = "ventana_name";
-            this.ventana_name.Size = new System.Drawing.Size(132, 37);
+            this.ventana_name.Size = new System.Drawing.Size(116, 30);
             this.ventana_name.TabIndex = 1;
             this.ventana_name.Text = "Ventana_name";
             this.ventana_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -182,12 +177,11 @@
             this.cont_sign.ColumnCount = 1;
             this.cont_sign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.cont_sign.Controls.Add(this.cont_sign_in, 0, 0);
-            this.cont_sign.Location = new System.Drawing.Point(0, 37);
-            this.cont_sign.Margin = new System.Windows.Forms.Padding(4);
+            this.cont_sign.Location = new System.Drawing.Point(0, 30);
             this.cont_sign.Name = "cont_sign";
             this.cont_sign.RowCount = 1;
             this.cont_sign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.cont_sign.Size = new System.Drawing.Size(625, 564);
+            this.cont_sign.Size = new System.Drawing.Size(469, 458);
             this.cont_sign.TabIndex = 1;
             // 
             // cont_sign_in
@@ -198,13 +192,12 @@
             this.cont_sign_in.ColumnCount = 1;
             this.cont_sign_in.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.cont_sign_in.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.cont_sign_in.Location = new System.Drawing.Point(4, 4);
-            this.cont_sign_in.Margin = new System.Windows.Forms.Padding(4);
-            this.cont_sign_in.MaximumSize = new System.Drawing.Size(733, 615);
+            this.cont_sign_in.Location = new System.Drawing.Point(3, 3);
+            this.cont_sign_in.MaximumSize = new System.Drawing.Size(550, 500);
             this.cont_sign_in.Name = "cont_sign_in";
             this.cont_sign_in.RowCount = 1;
             this.cont_sign_in.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.cont_sign_in.Size = new System.Drawing.Size(617, 556);
+            this.cont_sign_in.Size = new System.Drawing.Size(463, 452);
             this.cont_sign_in.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -229,17 +222,18 @@
             this.tableLayoutPanel1.Controls.Add(this.color, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 2, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 153F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(611, 550);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(459, 447);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -254,15 +248,15 @@
             this.my_modelo.BorderSize = 2;
             this.my_modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_modelo.ForeColor = System.Drawing.Color.White;
-            this.my_modelo.Location = new System.Drawing.Point(136, 89);
+            this.my_modelo.Location = new System.Drawing.Point(103, 72);
             this.my_modelo.Margin = new System.Windows.Forms.Padding(4);
             this.my_modelo.Multiline = false;
             this.my_modelo.Name = "my_modelo";
-            this.my_modelo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.my_modelo.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.my_modelo.PasswordChar = false;
             this.my_modelo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_modelo.PlaceholderText = "";
-            this.my_modelo.Size = new System.Drawing.Size(357, 35);
+            this.my_modelo.Size = new System.Drawing.Size(266, 29);
             this.my_modelo.TabIndex = 1;
             this.my_modelo.Tag = "caca";
             this.my_modelo.Texts = "";
@@ -278,9 +272,10 @@
             this.my_pictureBox1.BorderSize = 2;
             this.my_pictureBox1.GradientAngle = 50F;
             this.my_pictureBox1.Image = global::Reservar.Properties.Resources.WhatsApp_Image_2024_05_12_at_19_18_28;
-            this.my_pictureBox1.Location = new System.Drawing.Point(505, 3);
+            this.my_pictureBox1.Location = new System.Drawing.Point(380, 2);
+            this.my_pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.my_pictureBox1.Name = "my_pictureBox1";
-            this.my_pictureBox1.Size = new System.Drawing.Size(103, 103);
+            this.my_pictureBox1.Size = new System.Drawing.Size(77, 77);
             this.my_pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.my_pictureBox1.TabIndex = 0;
             this.my_pictureBox1.TabStop = false;
@@ -291,9 +286,10 @@
             this.titulo.AutoSize = true;
             this.titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.ForeColor = System.Drawing.SystemColors.Control;
-            this.titulo.Location = new System.Drawing.Point(193, 23);
+            this.titulo.Location = new System.Drawing.Point(138, 18);
+            this.titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(243, 29);
+            this.titulo.Size = new System.Drawing.Size(196, 24);
             this.titulo.TabIndex = 2;
             this.titulo.Text = "Ingresar nuevo auto";
             // 
@@ -303,9 +299,10 @@
             this.Modelo.AutoSize = true;
             this.Modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Modelo.ForeColor = System.Drawing.SystemColors.Control;
-            this.Modelo.Location = new System.Drawing.Point(49, 95);
+            this.Modelo.Location = new System.Drawing.Point(28, 77);
+            this.Modelo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Modelo.Name = "Modelo";
-            this.Modelo.Size = new System.Drawing.Size(80, 22);
+            this.Modelo.Size = new System.Drawing.Size(69, 18);
             this.Modelo.TabIndex = 3;
             this.Modelo.Text = "Modelo:";
             this.Modelo.Click += new System.EventHandler(this.Modelo_Click);
@@ -316,9 +313,10 @@
             this.anio.AutoSize = true;
             this.anio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anio.ForeColor = System.Drawing.SystemColors.Control;
-            this.anio.Location = new System.Drawing.Point(78, 211);
+            this.anio.Location = new System.Drawing.Point(55, 171);
+            this.anio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.anio.Name = "anio";
-            this.anio.Size = new System.Drawing.Size(51, 22);
+            this.anio.Size = new System.Drawing.Size(42, 18);
             this.anio.TabIndex = 6;
             this.anio.Text = "Año:";
             // 
@@ -332,15 +330,15 @@
             this.my_anio.BorderSize = 2;
             this.my_anio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_anio.ForeColor = System.Drawing.Color.White;
-            this.my_anio.Location = new System.Drawing.Point(136, 204);
+            this.my_anio.Location = new System.Drawing.Point(103, 166);
             this.my_anio.Margin = new System.Windows.Forms.Padding(4);
             this.my_anio.Multiline = false;
             this.my_anio.Name = "my_anio";
-            this.my_anio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.my_anio.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.my_anio.PasswordChar = false;
             this.my_anio.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_anio.PlaceholderText = "";
-            this.my_anio.Size = new System.Drawing.Size(357, 35);
+            this.my_anio.Size = new System.Drawing.Size(266, 29);
             this.my_anio.TabIndex = 7;
             this.my_anio.Texts = "";
             this.my_anio.UnderlinedStyle = false;
@@ -355,15 +353,15 @@
             this.my_placas.BorderSize = 2;
             this.my_placas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_placas.ForeColor = System.Drawing.Color.White;
-            this.my_placas.Location = new System.Drawing.Point(136, 264);
+            this.my_placas.Location = new System.Drawing.Point(103, 215);
             this.my_placas.Margin = new System.Windows.Forms.Padding(4);
             this.my_placas.Multiline = false;
             this.my_placas.Name = "my_placas";
-            this.my_placas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.my_placas.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.my_placas.PasswordChar = false;
             this.my_placas.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_placas.PlaceholderText = "";
-            this.my_placas.Size = new System.Drawing.Size(357, 35);
+            this.my_placas.Size = new System.Drawing.Size(266, 29);
             this.my_placas.TabIndex = 4;
             this.my_placas.Texts = "";
             this.my_placas.UnderlinedStyle = false;
@@ -374,9 +372,10 @@
             this.placas.AutoSize = true;
             this.placas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placas.ForeColor = System.Drawing.SystemColors.Control;
-            this.placas.Location = new System.Drawing.Point(53, 271);
+            this.placas.Location = new System.Drawing.Point(33, 220);
+            this.placas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.placas.Name = "placas";
-            this.placas.Size = new System.Drawing.Size(76, 22);
+            this.placas.Size = new System.Drawing.Size(64, 18);
             this.placas.TabIndex = 5;
             this.placas.Text = "Placas:";
             // 
@@ -390,15 +389,15 @@
             this.my_color.BorderSize = 2;
             this.my_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_color.ForeColor = System.Drawing.Color.White;
-            this.my_color.Location = new System.Drawing.Point(136, 150);
+            this.my_color.Location = new System.Drawing.Point(103, 121);
             this.my_color.Margin = new System.Windows.Forms.Padding(4);
             this.my_color.Multiline = false;
             this.my_color.Name = "my_color";
-            this.my_color.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.my_color.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.my_color.PasswordChar = false;
             this.my_color.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_color.PlaceholderText = "";
-            this.my_color.Size = new System.Drawing.Size(357, 35);
+            this.my_color.Size = new System.Drawing.Size(266, 29);
             this.my_color.TabIndex = 8;
             this.my_color.Texts = "";
             this.my_color.UnderlinedStyle = false;
@@ -410,11 +409,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.my_botonSalir, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.my_botonAceptar, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(135, 473);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(101, 384);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(359, 74);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(269, 60);
             this.tableLayoutPanel3.TabIndex = 14;
             // 
             // my_botonSalir
@@ -429,9 +429,10 @@
             this.my_botonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.my_botonSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_botonSalir.ForeColor = System.Drawing.Color.White;
-            this.my_botonSalir.Location = new System.Drawing.Point(216, 17);
+            this.my_botonSalir.Location = new System.Drawing.Point(162, 14);
+            this.my_botonSalir.Margin = new System.Windows.Forms.Padding(2);
             this.my_botonSalir.Name = "my_botonSalir";
-            this.my_botonSalir.Size = new System.Drawing.Size(140, 40);
+            this.my_botonSalir.Size = new System.Drawing.Size(105, 32);
             this.my_botonSalir.TabIndex = 14;
             this.my_botonSalir.Text = "Salir";
             this.my_botonSalir.TextColor = System.Drawing.Color.White;
@@ -450,9 +451,10 @@
             this.my_botonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.my_botonAceptar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_botonAceptar.ForeColor = System.Drawing.Color.White;
-            this.my_botonAceptar.Location = new System.Drawing.Point(36, 17);
+            this.my_botonAceptar.Location = new System.Drawing.Point(27, 14);
+            this.my_botonAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.my_botonAceptar.Name = "my_botonAceptar";
-            this.my_botonAceptar.Size = new System.Drawing.Size(140, 40);
+            this.my_botonAceptar.Size = new System.Drawing.Size(105, 32);
             this.my_botonAceptar.TabIndex = 13;
             this.my_botonAceptar.Text = "Aceptar";
             this.my_botonAceptar.TextColor = System.Drawing.Color.White;
@@ -465,9 +467,10 @@
             this.Marca.AutoSize = true;
             this.Marca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Marca.ForeColor = System.Drawing.SystemColors.Control;
-            this.Marca.Location = new System.Drawing.Point(59, 317);
+            this.Marca.Location = new System.Drawing.Point(37, 258);
+            this.Marca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Marca.Name = "Marca";
-            this.Marca.Size = new System.Drawing.Size(70, 22);
+            this.Marca.Size = new System.Drawing.Size(60, 18);
             this.Marca.TabIndex = 9;
             this.Marca.Text = "Marca:";
             // 
@@ -477,9 +480,10 @@
             this.color.AutoSize = true;
             this.color.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.color.ForeColor = System.Drawing.SystemColors.Control;
-            this.color.Location = new System.Drawing.Point(65, 156);
+            this.color.Location = new System.Drawing.Point(42, 127);
+            this.color.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.color.Name = "color";
-            this.color.Size = new System.Drawing.Size(64, 22);
+            this.color.Size = new System.Drawing.Size(55, 18);
             this.color.TabIndex = 10;
             this.color.Text = "Color:";
             // 
@@ -498,13 +502,14 @@
             this.tableLayoutPanel4.Controls.Add(this.my_radioButton3, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.my_radioButton2, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.my_radioButton1, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(135, 320);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(101, 260);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(359, 146);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(269, 119);
             this.tableLayoutPanel4.TabIndex = 15;
             // 
             // my_radioButton9
@@ -515,11 +520,12 @@
             this.my_radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton9.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton9.Location = new System.Drawing.Point(241, 107);
-            this.my_radioButton9.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton9.Location = new System.Drawing.Point(180, 86);
+            this.my_radioButton9.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton9.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton9.Name = "my_radioButton9";
-            this.my_radioButton9.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton9.Size = new System.Drawing.Size(82, 27);
+            this.my_radioButton9.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton9.Size = new System.Drawing.Size(68, 24);
             this.my_radioButton9.TabIndex = 8;
             this.my_radioButton9.TabStop = true;
             this.my_radioButton9.Text = "Otro:";
@@ -535,11 +541,12 @@
             this.my_radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton8.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton8.Location = new System.Drawing.Point(122, 107);
-            this.my_radioButton8.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton8.Location = new System.Drawing.Point(91, 86);
+            this.my_radioButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton8.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton8.Name = "my_radioButton8";
-            this.my_radioButton8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton8.Size = new System.Drawing.Size(95, 27);
+            this.my_radioButton8.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton8.Size = new System.Drawing.Size(81, 24);
             this.my_radioButton8.TabIndex = 7;
             this.my_radioButton8.TabStop = true;
             this.my_radioButton8.Text = "Honda";
@@ -555,11 +562,12 @@
             this.my_radioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton7.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton7.Location = new System.Drawing.Point(3, 107);
-            this.my_radioButton7.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton7.Location = new System.Drawing.Point(2, 86);
+            this.my_radioButton7.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton7.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton7.Name = "my_radioButton7";
-            this.my_radioButton7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton7.Size = new System.Drawing.Size(95, 27);
+            this.my_radioButton7.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton7.Size = new System.Drawing.Size(81, 24);
             this.my_radioButton7.TabIndex = 6;
             this.my_radioButton7.TabStop = true;
             this.my_radioButton7.Text = "Mazda";
@@ -575,11 +583,12 @@
             this.my_radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton6.Location = new System.Drawing.Point(241, 58);
-            this.my_radioButton6.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton6.Location = new System.Drawing.Point(180, 46);
+            this.my_radioButton6.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton6.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton6.Name = "my_radioButton6";
-            this.my_radioButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton6.Size = new System.Drawing.Size(78, 27);
+            this.my_radioButton6.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton6.Size = new System.Drawing.Size(65, 24);
             this.my_radioButton6.TabIndex = 5;
             this.my_radioButton6.TabStop = true;
             this.my_radioButton6.Text = "Ford";
@@ -595,11 +604,12 @@
             this.my_radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton5.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton5.Location = new System.Drawing.Point(122, 58);
-            this.my_radioButton5.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton5.Location = new System.Drawing.Point(91, 46);
+            this.my_radioButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton5.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton5.Name = "my_radioButton5";
-            this.my_radioButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton5.Size = new System.Drawing.Size(97, 27);
+            this.my_radioButton5.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton5.Size = new System.Drawing.Size(81, 24);
             this.my_radioButton5.TabIndex = 4;
             this.my_radioButton5.TabStop = true;
             this.my_radioButton5.Text = "Dodge";
@@ -615,11 +625,12 @@
             this.my_radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton4.Location = new System.Drawing.Point(3, 58);
-            this.my_radioButton4.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton4.Location = new System.Drawing.Point(2, 46);
+            this.my_radioButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton4.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton4.Name = "my_radioButton4";
-            this.my_radioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton4.Size = new System.Drawing.Size(97, 27);
+            this.my_radioButton4.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton4.Size = new System.Drawing.Size(81, 24);
             this.my_radioButton4.TabIndex = 3;
             this.my_radioButton4.TabStop = true;
             this.my_radioButton4.Text = "Toyota";
@@ -635,11 +646,12 @@
             this.my_radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton3.Location = new System.Drawing.Point(241, 10);
-            this.my_radioButton3.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton3.Location = new System.Drawing.Point(180, 7);
+            this.my_radioButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton3.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton3.Name = "my_radioButton3";
-            this.my_radioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton3.Size = new System.Drawing.Size(79, 27);
+            this.my_radioButton3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton3.Size = new System.Drawing.Size(66, 24);
             this.my_radioButton3.TabIndex = 2;
             this.my_radioButton3.TabStop = true;
             this.my_radioButton3.Text = "Jeep";
@@ -655,11 +667,12 @@
             this.my_radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton2.Location = new System.Drawing.Point(122, 10);
-            this.my_radioButton2.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton2.Location = new System.Drawing.Point(91, 7);
+            this.my_radioButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton2.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton2.Name = "my_radioButton2";
-            this.my_radioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton2.Size = new System.Drawing.Size(95, 27);
+            this.my_radioButton2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton2.Size = new System.Drawing.Size(79, 24);
             this.my_radioButton2.TabIndex = 1;
             this.my_radioButton2.TabStop = true;
             this.my_radioButton2.Text = "Nissan";
@@ -675,11 +688,12 @@
             this.my_radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.my_radioButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton1.Location = new System.Drawing.Point(3, 10);
-            this.my_radioButton1.MinimumSize = new System.Drawing.Size(0, 21);
+            this.my_radioButton1.Location = new System.Drawing.Point(2, 7);
+            this.my_radioButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.my_radioButton1.MinimumSize = new System.Drawing.Size(0, 17);
             this.my_radioButton1.Name = "my_radioButton1";
-            this.my_radioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.my_radioButton1.Size = new System.Drawing.Size(78, 27);
+            this.my_radioButton1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.my_radioButton1.Size = new System.Drawing.Size(65, 24);
             this.my_radioButton1.TabIndex = 0;
             this.my_radioButton1.TabStop = true;
             this.my_radioButton1.Text = "Ford";
@@ -692,12 +706,13 @@
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.my_textBoxOtro, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(500, 320);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(375, 260);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(108, 146);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(81, 119);
             this.tableLayoutPanel5.TabIndex = 17;
             this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
@@ -711,15 +726,15 @@
             this.my_textBoxOtro.BorderSize = 2;
             this.my_textBoxOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_textBoxOtro.ForeColor = System.Drawing.Color.White;
-            this.my_textBoxOtro.Location = new System.Drawing.Point(4, 107);
+            this.my_textBoxOtro.Location = new System.Drawing.Point(4, 86);
             this.my_textBoxOtro.Margin = new System.Windows.Forms.Padding(4);
             this.my_textBoxOtro.Multiline = false;
             this.my_textBoxOtro.Name = "my_textBoxOtro";
-            this.my_textBoxOtro.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.my_textBoxOtro.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.my_textBoxOtro.PasswordChar = false;
             this.my_textBoxOtro.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_textBoxOtro.PlaceholderText = "";
-            this.my_textBoxOtro.Size = new System.Drawing.Size(100, 35);
+            this.my_textBoxOtro.Size = new System.Drawing.Size(73, 29);
             this.my_textBoxOtro.TabIndex = 16;
             this.my_textBoxOtro.Texts = "";
             this.my_textBoxOtro.UnderlinedStyle = false;
@@ -727,16 +742,15 @@
             // 
             // Form_autos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(26)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(625, 602);
+            this.ClientSize = new System.Drawing.Size(469, 489);
             this.Controls.Add(this.cont_sign);
             this.Controls.Add(this.control_bar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_autos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar auto";
