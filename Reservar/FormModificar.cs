@@ -84,5 +84,35 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
+
+        private void titulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void color_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void my_botonAceptar2_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(my_newUser.Texts))
+            {
+                MessageBox.Show("Error, llene todos los espacios");
+            } else if (string.IsNullOrWhiteSpace(my_NewPassword.Texts))
+            {
+                MessageBox.Show("Error, llene todos los espacios");
+            }
+        }
+
+        private void my_botonSalir2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main_page main_Page = new Main_page();  
+            main_Page.Show();   
+        }
+
+
     }
 }
