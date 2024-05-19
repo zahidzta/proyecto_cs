@@ -361,7 +361,7 @@
             this.txtBox_confirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_confirmPassword.ForeColor = System.Drawing.Color.White;
             this.txtBox_confirmPassword.Location = new System.Drawing.Point(66, 5);
-            this.txtBox_confirmPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_confirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_confirmPassword.Multiline = false;
             this.txtBox_confirmPassword.Name = "txtBox_confirmPassword";
             this.txtBox_confirmPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -416,7 +416,7 @@
             this.txtBox_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_password.ForeColor = System.Drawing.Color.White;
             this.txtBox_password.Location = new System.Drawing.Point(66, 5);
-            this.txtBox_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_password.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_password.Multiline = false;
             this.txtBox_password.Name = "txtBox_password";
             this.txtBox_password.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -471,7 +471,7 @@
             this.txtBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_email.ForeColor = System.Drawing.Color.White;
             this.txtBox_email.Location = new System.Drawing.Point(66, 5);
-            this.txtBox_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_email.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_email.Multiline = false;
             this.txtBox_email.Name = "txtBox_email";
             this.txtBox_email.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -549,7 +549,7 @@
             this.txtBox_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_nombre.ForeColor = System.Drawing.Color.White;
             this.txtBox_nombre.Location = new System.Drawing.Point(66, 5);
-            this.txtBox_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox_nombre.Multiline = false;
             this.txtBox_nombre.Name = "txtBox_nombre";
             this.txtBox_nombre.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);

@@ -92,10 +92,11 @@ namespace Reservar
         }
         #endregion
 
+        //Si presiona el botón salir regresa a la ventana de iniciar sesión
         private void my_botonSalir_Click(object sender, EventArgs e)
         {
-            Main_page main_Page = new Main_page();
-            main_Page.Show();
+            Sign_in_up inicio = new Sign_in_up();
+            inicio.Show();
             this.Hide();
             
         }
