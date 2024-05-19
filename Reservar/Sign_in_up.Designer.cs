@@ -231,7 +231,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 129);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Lorem Ipsum";
+            this.label1.Text = "ZETA CR";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel1
