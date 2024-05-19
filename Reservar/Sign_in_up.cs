@@ -108,22 +108,25 @@ namespace Reservar
 
         private XmlNode Iniciar_sesion(string correo, string password)
         {
-
+            //Archivo en el que se van a buscar los datos
             string filePath = "xmlUsers.xml";
             XmlDocument xmlDoc = new XmlDocument();
-
+            //Se carga el archivo
             xmlDoc.Load(filePath);
+            //Se guardan en una lista todos los elementos con la etiqueta User que se encuentran dentro de la etiqueta Users
             XmlNodeList users = xmlDoc.SelectNodes("/Users/User");
 
+            //Se recorre la lista de los usuarios hasta encontrar el usuario que se esta buscando
             foreach (XmlNode user in users)
             {
-
+                //Si el correo y la contraseña coinciden entonces se retorna el usuario
                 if (correo == user.SelectSingleNode("correo").InnerText && password == user.SelectSingleNode("password").InnerText)
                 {
                     return user;
                 }
 
             }
+            //Si el usuario no se encuentra, entonces se retorna null y se muestra una alerta
             MessageBox.Show("Datos Incorrectos");
             return null;
 
@@ -133,25 +136,32 @@ namespace Reservar
         //Se informa que los campos no esten vacios
         private void btn_sign_in_Click(object sender, EventArgs e)
         {
+            //Variable para evaluar que todos los campos estan llenos
             bool valoreCorrectos = true;
 
+            //Si algún campo no esta lleno se coloca el borde de color rojo
             if (txtBox_email.Texts == "" || textBox_password.Texts == "")
             {
                 label_errores.ForeColor = Color.DarkRed;
                 label_errores.Text = "Faltan campos por llenar";
                 valoreCorrectos = false;
             }
+
+            //Se guarda el usuario que inició sesión
             XmlNode user = Iniciar_sesion(txtBox_email.Texts, textBox_password.Texts);
 
-            //Se abre la ventana principal en el caso de que los campos sean correctos
+            //Se verifica que los campos esten llenos y que el usuario si existe
             if (valoreCorrectos && user != null)
             {
+                //Si un usuario inicia sesión, entonces se muestra el catálogo de autos
                 if (user.SelectSingleNode("Admin").InnerText == "0")
                 {
                     Main_page ventanaPrincipal = new Main_page();
                     ventanaPrincipal.Show();
                     this.Hide();
-                } else
+                } 
+                //Si el admin inicia sesión, entoces se muestra el formulario para agregar autos
+                else
                 {
                     Form_autos form_admin = new Form_autos();
                     form_admin.Show();
@@ -159,11 +169,6 @@ namespace Reservar
                 }
                 
             }
-        }
-
-        private void txtBox_email__TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
