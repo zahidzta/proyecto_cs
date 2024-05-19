@@ -16,7 +16,7 @@ namespace Reservar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormModificar());
+            Application.Run(new Form_autos());
         }
     }
 }
