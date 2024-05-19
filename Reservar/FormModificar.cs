@@ -112,7 +112,5 @@ namespace Reservar
             Main_page main_Page = new Main_page();  
             main_Page.Show();   
         }
-
-
     }
 }

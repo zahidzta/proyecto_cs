@@ -47,6 +47,14 @@
             this.my_pictureBox3 = new Reservar.My_controls.My_pictureBox();
             this.titulo = new System.Windows.Forms.Label();
             this.my_pictureBox1 = new Reservar.My_controls.My_pictureBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_eliminarCuenta = new Reservar.My_controls.My_button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label_datosAuto = new System.Windows.Forms.Label();
+            this.button_entregarAuto = new Reservar.My_controls.My_button();
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
@@ -57,6 +65,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // control_bar
@@ -173,14 +184,13 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 29);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(458, 439);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(458, 317);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // my_newUser
@@ -382,12 +392,122 @@
             this.my_pictureBox1.TabIndex = 0;
             this.my_pictureBox1.TabStop = false;
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 351);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(469, 138);
+            this.tableLayoutPanel4.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.panel1.Controls.Add(this.button_eliminarCuenta);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(17, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 107);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.panel2.Controls.Add(this.button_entregarAuto);
+            this.panel2.Controls.Add(this.label_datosAuto);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(251, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 107);
+            this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Eliminar cuenta";
+            // 
+            // button_eliminarCuenta
+            // 
+            this.button_eliminarCuenta.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_eliminarCuenta.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_eliminarCuenta.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.button_eliminarCuenta.BorderRadius = 10;
+            this.button_eliminarCuenta.BorderSize = 0;
+            this.button_eliminarCuenta.FlatAppearance.BorderSize = 0;
+            this.button_eliminarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_eliminarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_eliminarCuenta.ForeColor = System.Drawing.Color.White;
+            this.button_eliminarCuenta.Location = new System.Drawing.Point(26, 53);
+            this.button_eliminarCuenta.Name = "button_eliminarCuenta";
+            this.button_eliminarCuenta.Size = new System.Drawing.Size(150, 44);
+            this.button_eliminarCuenta.TabIndex = 1;
+            this.button_eliminarCuenta.Text = "Click para eliminar cuenta";
+            this.button_eliminarCuenta.TextColor = System.Drawing.Color.White;
+            this.button_eliminarCuenta.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(29, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Auto rentado";
+            // 
+            // label_datosAuto
+            // 
+            this.label_datosAuto.AutoSize = true;
+            this.label_datosAuto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_datosAuto.ForeColor = System.Drawing.Color.White;
+            this.label_datosAuto.Location = new System.Drawing.Point(6, 40);
+            this.label_datosAuto.Name = "label_datosAuto";
+            this.label_datosAuto.Size = new System.Drawing.Size(90, 17);
+            this.label_datosAuto.TabIndex = 2;
+            this.label_datosAuto.Text = "Auto rentado";
+            // 
+            // button_entregarAuto
+            // 
+            this.button_entregarAuto.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_entregarAuto.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_entregarAuto.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.button_entregarAuto.BorderRadius = 10;
+            this.button_entregarAuto.BorderSize = 0;
+            this.button_entregarAuto.FlatAppearance.BorderSize = 0;
+            this.button_entregarAuto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_entregarAuto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_entregarAuto.ForeColor = System.Drawing.Color.White;
+            this.button_entregarAuto.Location = new System.Drawing.Point(34, 64);
+            this.button_entregarAuto.Name = "button_entregarAuto";
+            this.button_entregarAuto.Size = new System.Drawing.Size(138, 29);
+            this.button_entregarAuto.TabIndex = 3;
+            this.button_entregarAuto.Text = "Entregar auto";
+            this.button_entregarAuto.TextColor = System.Drawing.Color.White;
+            this.button_entregarAuto.UseVisualStyleBackColor = false;
+            // 
             // FormModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(26)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(469, 489);
+            this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.control_bar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -408,6 +528,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -432,6 +557,14 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private My_controls.My_pictureBox my_pictureBox2;
         private My_controls.My_pictureBox my_pictureBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private My_controls.My_button button_eliminarCuenta;
+        private System.Windows.Forms.Label label1;
+        private My_controls.My_button button_entregarAuto;
+        private System.Windows.Forms.Label label_datosAuto;
+        private System.Windows.Forms.Label label2;
     }
 }
 
