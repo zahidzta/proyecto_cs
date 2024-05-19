@@ -156,7 +156,7 @@ namespace Reservar
                 //Si un usuario inicia sesión, entonces se muestra el catálogo de autos
                 if (user.SelectSingleNode("Admin").InnerText == "0")
                 {
-                    Main_page ventanaPrincipal = new Main_page();
+                    Main_page ventanaPrincipal = new Main_page(user);
                     ventanaPrincipal.Show();
                     this.Hide();
                 } 

@@ -108,7 +108,7 @@ namespace Reservar
             this.Hide();
         }
 
-        private static void GuardarDatosUser(string nombre, string correo, string password)
+        private static XmlNode GuardarDatosUser(string nombre, string correo, string password)
         {
             //Nombre del arvhivo que se va a crear o buscar para guardar datos
             string filePath = "xmlUsers.xml";
@@ -185,6 +185,7 @@ namespace Reservar
             rootNode.AppendChild(userNode);
 
             xmlDoc.Save(filePath);
+            return userNode;
         }
 
         private static int ObtenerUltimoId(XmlDocument xmlDoc)
@@ -236,8 +237,8 @@ namespace Reservar
             //Si los campos son correctos entonces se abre la ventana principal
             if (valoresCorrectos)
             {
-                GuardarDatosUser(txtBox_nombre.Texts, txtBox_email.Texts, txtBox_password.Texts);
-                Main_page ventanaPrincipal = new Main_page();
+                XmlNode user = GuardarDatosUser(txtBox_nombre.Texts, txtBox_email.Texts, txtBox_password.Texts);
+                Main_page ventanaPrincipal = new Main_page(user);
                 ventanaPrincipal.Show();
                 this.Close();
             }
