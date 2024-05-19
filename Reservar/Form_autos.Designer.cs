@@ -419,7 +419,7 @@
             // 
             // my_botonSalir
             // 
-            this.my_botonSalir.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.my_botonSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.my_botonSalir.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.my_botonSalir.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.my_botonSalir.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -429,7 +429,7 @@
             this.my_botonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.my_botonSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_botonSalir.ForeColor = System.Drawing.Color.White;
-            this.my_botonSalir.Location = new System.Drawing.Point(162, 14);
+            this.my_botonSalir.Location = new System.Drawing.Point(149, 14);
             this.my_botonSalir.Margin = new System.Windows.Forms.Padding(2);
             this.my_botonSalir.Name = "my_botonSalir";
             this.my_botonSalir.Size = new System.Drawing.Size(105, 32);
@@ -441,7 +441,7 @@
             // 
             // my_botonAceptar
             // 
-            this.my_botonAceptar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.my_botonAceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.my_botonAceptar.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.my_botonAceptar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.my_botonAceptar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -451,7 +451,7 @@
             this.my_botonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.my_botonAceptar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_botonAceptar.ForeColor = System.Drawing.Color.White;
-            this.my_botonAceptar.Location = new System.Drawing.Point(27, 14);
+            this.my_botonAceptar.Location = new System.Drawing.Point(14, 14);
             this.my_botonAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.my_botonAceptar.Name = "my_botonAceptar";
             this.my_botonAceptar.Size = new System.Drawing.Size(105, 32);
