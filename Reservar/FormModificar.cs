@@ -109,8 +109,8 @@ namespace Reservar
         private void my_botonSalir2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Main_page main_Page = new Main_page();  
-            main_Page.Show();   
+            //Main_page main_Page = new Main_page();  
+            //main_Page.Show();   
         }
     }
 }

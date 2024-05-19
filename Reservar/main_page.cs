@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Reservar
 {
     public partial class Main_page : Form
     {
-        public Main_page()
+        public Main_page(XmlNode user)
         {
             InitializeComponent();
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             ventana_name.Text = this.Text;
+            label_nombre_user.Text = user.SelectSingleNode("nombre").InnerText;
         }
 
         #region Estilo ventana
