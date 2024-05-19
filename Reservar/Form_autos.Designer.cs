@@ -47,23 +47,14 @@
             this.my_placas = new Reservar.My_controls.My_textBox();
             this.placas = new System.Windows.Forms.Label();
             this.my_color = new Reservar.My_controls.My_textBox();
+            this.Marca = new System.Windows.Forms.Label();
+            this.color = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.my_botonSalir = new Reservar.My_controls.My_button();
             this.my_botonAceptar = new Reservar.My_controls.My_button();
-            this.Marca = new System.Windows.Forms.Label();
-            this.color = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.my_radioButton9 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton8 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton7 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton6 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton5 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton4 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton3 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton2 = new Reservar.My_controls.My_radioButton();
-            this.my_radioButton1 = new Reservar.My_controls.My_radioButton();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.my_textBoxOtro = new Reservar.My_controls.My_textBox();
+            this.my_marca = new Reservar.My_controls.My_textBox();
+            this.my_precio = new Reservar.My_controls.My_textBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
@@ -74,8 +65,6 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // control_bar
@@ -206,7 +195,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.76759F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.73813F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.73814F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.49427F));
             this.tableLayoutPanel1.Controls.Add(this.my_modelo, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.my_pictureBox1, 2, 0);
@@ -217,25 +206,26 @@
             this.tableLayoutPanel1.Controls.Add(this.my_placas, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.placas, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.my_color, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.Marca, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.color, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.my_marca, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.my_precio, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(459, 447);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // my_modelo
             // 
@@ -248,7 +238,7 @@
             this.my_modelo.BorderSize = 2;
             this.my_modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_modelo.ForeColor = System.Drawing.Color.White;
-            this.my_modelo.Location = new System.Drawing.Point(103, 72);
+            this.my_modelo.Location = new System.Drawing.Point(103, 52);
             this.my_modelo.Margin = new System.Windows.Forms.Padding(4);
             this.my_modelo.Multiline = false;
             this.my_modelo.Name = "my_modelo";
@@ -286,7 +276,7 @@
             this.titulo.AutoSize = true;
             this.titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.ForeColor = System.Drawing.SystemColors.Control;
-            this.titulo.Location = new System.Drawing.Point(138, 18);
+            this.titulo.Location = new System.Drawing.Point(138, 8);
             this.titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.titulo.Name = "titulo";
             this.titulo.Size = new System.Drawing.Size(196, 24);
@@ -299,13 +289,12 @@
             this.Modelo.AutoSize = true;
             this.Modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Modelo.ForeColor = System.Drawing.SystemColors.Control;
-            this.Modelo.Location = new System.Drawing.Point(28, 77);
+            this.Modelo.Location = new System.Drawing.Point(28, 57);
             this.Modelo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Modelo.Name = "Modelo";
             this.Modelo.Size = new System.Drawing.Size(69, 18);
             this.Modelo.TabIndex = 3;
             this.Modelo.Text = "Modelo:";
-            this.Modelo.Click += new System.EventHandler(this.Modelo_Click);
             // 
             // anio
             // 
@@ -313,7 +302,7 @@
             this.anio.AutoSize = true;
             this.anio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anio.ForeColor = System.Drawing.SystemColors.Control;
-            this.anio.Location = new System.Drawing.Point(55, 171);
+            this.anio.Location = new System.Drawing.Point(55, 151);
             this.anio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.anio.Name = "anio";
             this.anio.Size = new System.Drawing.Size(42, 18);
@@ -330,7 +319,7 @@
             this.my_anio.BorderSize = 2;
             this.my_anio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_anio.ForeColor = System.Drawing.Color.White;
-            this.my_anio.Location = new System.Drawing.Point(103, 166);
+            this.my_anio.Location = new System.Drawing.Point(103, 146);
             this.my_anio.Margin = new System.Windows.Forms.Padding(4);
             this.my_anio.Multiline = false;
             this.my_anio.Name = "my_anio";
@@ -339,7 +328,7 @@
             this.my_anio.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_anio.PlaceholderText = "";
             this.my_anio.Size = new System.Drawing.Size(266, 29);
-            this.my_anio.TabIndex = 7;
+            this.my_anio.TabIndex = 3;
             this.my_anio.Texts = "";
             this.my_anio.UnderlinedStyle = false;
             // 
@@ -353,7 +342,7 @@
             this.my_placas.BorderSize = 2;
             this.my_placas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_placas.ForeColor = System.Drawing.Color.White;
-            this.my_placas.Location = new System.Drawing.Point(103, 215);
+            this.my_placas.Location = new System.Drawing.Point(103, 195);
             this.my_placas.Margin = new System.Windows.Forms.Padding(4);
             this.my_placas.Multiline = false;
             this.my_placas.Name = "my_placas";
@@ -372,7 +361,7 @@
             this.placas.AutoSize = true;
             this.placas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placas.ForeColor = System.Drawing.SystemColors.Control;
-            this.placas.Location = new System.Drawing.Point(33, 220);
+            this.placas.Location = new System.Drawing.Point(33, 200);
             this.placas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.placas.Name = "placas";
             this.placas.Size = new System.Drawing.Size(64, 18);
@@ -389,7 +378,7 @@
             this.my_color.BorderSize = 2;
             this.my_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_color.ForeColor = System.Drawing.Color.White;
-            this.my_color.Location = new System.Drawing.Point(103, 121);
+            this.my_color.Location = new System.Drawing.Point(103, 101);
             this.my_color.Margin = new System.Windows.Forms.Padding(4);
             this.my_color.Multiline = false;
             this.my_color.Name = "my_color";
@@ -398,76 +387,17 @@
             this.my_color.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.my_color.PlaceholderText = "";
             this.my_color.Size = new System.Drawing.Size(266, 29);
-            this.my_color.TabIndex = 8;
+            this.my_color.TabIndex = 2;
             this.my_color.Texts = "";
             this.my_color.UnderlinedStyle = false;
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.my_botonSalir, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.my_botonAceptar, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(101, 384);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(269, 60);
-            this.tableLayoutPanel3.TabIndex = 14;
-            // 
-            // my_botonSalir
-            // 
-            this.my_botonSalir.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.my_botonSalir.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonSalir.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonSalir.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.my_botonSalir.BorderRadius = 0;
-            this.my_botonSalir.BorderSize = 0;
-            this.my_botonSalir.FlatAppearance.BorderSize = 0;
-            this.my_botonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.my_botonSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_botonSalir.ForeColor = System.Drawing.Color.White;
-            this.my_botonSalir.Location = new System.Drawing.Point(162, 14);
-            this.my_botonSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.my_botonSalir.Name = "my_botonSalir";
-            this.my_botonSalir.Size = new System.Drawing.Size(105, 32);
-            this.my_botonSalir.TabIndex = 14;
-            this.my_botonSalir.Text = "Salir";
-            this.my_botonSalir.TextColor = System.Drawing.Color.White;
-            this.my_botonSalir.UseVisualStyleBackColor = false;
-            this.my_botonSalir.Click += new System.EventHandler(this.my_botonSalir_Click);
-            // 
-            // my_botonAceptar
-            // 
-            this.my_botonAceptar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.my_botonAceptar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonAceptar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonAceptar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.my_botonAceptar.BorderRadius = 0;
-            this.my_botonAceptar.BorderSize = 0;
-            this.my_botonAceptar.FlatAppearance.BorderSize = 0;
-            this.my_botonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.my_botonAceptar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_botonAceptar.ForeColor = System.Drawing.Color.White;
-            this.my_botonAceptar.Location = new System.Drawing.Point(27, 14);
-            this.my_botonAceptar.Margin = new System.Windows.Forms.Padding(2);
-            this.my_botonAceptar.Name = "my_botonAceptar";
-            this.my_botonAceptar.Size = new System.Drawing.Size(105, 32);
-            this.my_botonAceptar.TabIndex = 13;
-            this.my_botonAceptar.Text = "Aceptar";
-            this.my_botonAceptar.TextColor = System.Drawing.Color.White;
-            this.my_botonAceptar.UseVisualStyleBackColor = false;
-            this.my_botonAceptar.Click += new System.EventHandler(this.my_botonAceptar_Click);
-            // 
             // Marca
             // 
-            this.Marca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Marca.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Marca.AutoSize = true;
             this.Marca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Marca.ForeColor = System.Drawing.SystemColors.Control;
-            this.Marca.Location = new System.Drawing.Point(37, 258);
+            this.Marca.Location = new System.Drawing.Point(37, 252);
             this.Marca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Marca.Name = "Marca";
             this.Marca.Size = new System.Drawing.Size(60, 18);
@@ -480,265 +410,130 @@
             this.color.AutoSize = true;
             this.color.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.color.ForeColor = System.Drawing.SystemColors.Control;
-            this.color.Location = new System.Drawing.Point(42, 127);
+            this.color.Location = new System.Drawing.Point(42, 107);
             this.color.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.color.Name = "color";
             this.color.Size = new System.Drawing.Size(55, 18);
             this.color.TabIndex = 10;
             this.color.Text = "Color:";
             // 
-            // tableLayoutPanel4
+            // tableLayoutPanel3
             // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton9, 2, 2);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton8, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton7, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton6, 2, 1);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton5, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton4, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton3, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton2, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.my_radioButton1, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(101, 260);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(269, 119);
-            this.tableLayoutPanel4.TabIndex = 15;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.my_botonSalir, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.my_botonAceptar, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(101, 338);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(269, 60);
+            this.tableLayoutPanel3.TabIndex = 15;
             // 
-            // my_radioButton9
+            // my_botonSalir
             // 
-            this.my_radioButton9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton9.AutoSize = true;
-            this.my_radioButton9.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton9.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton9.Location = new System.Drawing.Point(180, 86);
-            this.my_radioButton9.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton9.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton9.Name = "my_radioButton9";
-            this.my_radioButton9.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton9.Size = new System.Drawing.Size(68, 24);
-            this.my_radioButton9.TabIndex = 8;
-            this.my_radioButton9.TabStop = true;
-            this.my_radioButton9.Text = "Otro:";
-            this.my_radioButton9.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton9.UseVisualStyleBackColor = true;
-            this.my_radioButton9.CheckedChanged += new System.EventHandler(this.my_radioButton9_CheckedChanged);
+            this.my_botonSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.my_botonSalir.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_botonSalir.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_botonSalir.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.my_botonSalir.BorderRadius = 0;
+            this.my_botonSalir.BorderSize = 0;
+            this.my_botonSalir.FlatAppearance.BorderSize = 0;
+            this.my_botonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.my_botonSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_botonSalir.ForeColor = System.Drawing.Color.White;
+            this.my_botonSalir.Location = new System.Drawing.Point(149, 14);
+            this.my_botonSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.my_botonSalir.Name = "my_botonSalir";
+            this.my_botonSalir.Size = new System.Drawing.Size(105, 32);
+            this.my_botonSalir.TabIndex = 8;
+            this.my_botonSalir.Text = "Salir";
+            this.my_botonSalir.TextColor = System.Drawing.Color.White;
+            this.my_botonSalir.UseVisualStyleBackColor = false;
+            this.my_botonSalir.Click += new System.EventHandler(this.my_botonSalir_Click);
             // 
-            // my_radioButton8
+            // my_botonAceptar
             // 
-            this.my_radioButton8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton8.AutoSize = true;
-            this.my_radioButton8.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton8.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton8.Location = new System.Drawing.Point(91, 86);
-            this.my_radioButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton8.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton8.Name = "my_radioButton8";
-            this.my_radioButton8.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton8.Size = new System.Drawing.Size(81, 24);
-            this.my_radioButton8.TabIndex = 7;
-            this.my_radioButton8.TabStop = true;
-            this.my_radioButton8.Text = "Honda";
-            this.my_radioButton8.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton8.UseVisualStyleBackColor = true;
-            this.my_radioButton8.CheckedChanged += new System.EventHandler(this.my_radioButton8_CheckedChanged);
+            this.my_botonAceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.my_botonAceptar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_botonAceptar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_botonAceptar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.my_botonAceptar.BorderRadius = 0;
+            this.my_botonAceptar.BorderSize = 0;
+            this.my_botonAceptar.FlatAppearance.BorderSize = 0;
+            this.my_botonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.my_botonAceptar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_botonAceptar.ForeColor = System.Drawing.Color.White;
+            this.my_botonAceptar.Location = new System.Drawing.Point(14, 14);
+            this.my_botonAceptar.Margin = new System.Windows.Forms.Padding(2);
+            this.my_botonAceptar.Name = "my_botonAceptar";
+            this.my_botonAceptar.Size = new System.Drawing.Size(105, 32);
+            this.my_botonAceptar.TabIndex = 7;
+            this.my_botonAceptar.Text = "Aceptar";
+            this.my_botonAceptar.TextColor = System.Drawing.Color.White;
+            this.my_botonAceptar.UseVisualStyleBackColor = false;
+            this.my_botonAceptar.Click += new System.EventHandler(this.my_botonAceptar_Click);
             // 
-            // my_radioButton7
+            // my_marca
             // 
-            this.my_radioButton7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton7.AutoSize = true;
-            this.my_radioButton7.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton7.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton7.Location = new System.Drawing.Point(2, 86);
-            this.my_radioButton7.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton7.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton7.Name = "my_radioButton7";
-            this.my_radioButton7.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton7.Size = new System.Drawing.Size(81, 24);
-            this.my_radioButton7.TabIndex = 6;
-            this.my_radioButton7.TabStop = true;
-            this.my_radioButton7.Text = "Mazda";
-            this.my_radioButton7.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton7.UseVisualStyleBackColor = true;
-            this.my_radioButton7.CheckedChanged += new System.EventHandler(this.my_radioButton7_CheckedChanged);
+            this.my_marca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.my_marca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
+            this.my_marca.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_marca.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.my_marca.BorderRadius = 0;
+            this.my_marca.BorderSize = 2;
+            this.my_marca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_marca.ForeColor = System.Drawing.Color.White;
+            this.my_marca.Location = new System.Drawing.Point(103, 247);
+            this.my_marca.Margin = new System.Windows.Forms.Padding(4);
+            this.my_marca.Multiline = false;
+            this.my_marca.Name = "my_marca";
+            this.my_marca.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.my_marca.PasswordChar = false;
+            this.my_marca.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.my_marca.PlaceholderText = "";
+            this.my_marca.Size = new System.Drawing.Size(266, 29);
+            this.my_marca.TabIndex = 5;
+            this.my_marca.Texts = "";
+            this.my_marca.UnderlinedStyle = false;
             // 
-            // my_radioButton6
+            // my_precio
             // 
-            this.my_radioButton6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton6.AutoSize = true;
-            this.my_radioButton6.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton6.Location = new System.Drawing.Point(180, 46);
-            this.my_radioButton6.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton6.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton6.Name = "my_radioButton6";
-            this.my_radioButton6.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton6.Size = new System.Drawing.Size(65, 24);
-            this.my_radioButton6.TabIndex = 5;
-            this.my_radioButton6.TabStop = true;
-            this.my_radioButton6.Text = "Ford";
-            this.my_radioButton6.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton6.UseVisualStyleBackColor = true;
-            this.my_radioButton6.CheckedChanged += new System.EventHandler(this.my_radioButton6_CheckedChanged);
+            this.my_precio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.my_precio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
+            this.my_precio.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_precio.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.my_precio.BorderRadius = 0;
+            this.my_precio.BorderSize = 2;
+            this.my_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_precio.ForeColor = System.Drawing.Color.White;
+            this.my_precio.Location = new System.Drawing.Point(103, 296);
+            this.my_precio.Margin = new System.Windows.Forms.Padding(4);
+            this.my_precio.Multiline = false;
+            this.my_precio.Name = "my_precio";
+            this.my_precio.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.my_precio.PasswordChar = false;
+            this.my_precio.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.my_precio.PlaceholderText = "";
+            this.my_precio.Size = new System.Drawing.Size(266, 29);
+            this.my_precio.TabIndex = 6;
+            this.my_precio.Texts = "";
+            this.my_precio.UnderlinedStyle = false;
             // 
-            // my_radioButton5
+            // label1
             // 
-            this.my_radioButton5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton5.AutoSize = true;
-            this.my_radioButton5.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton5.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton5.Location = new System.Drawing.Point(91, 46);
-            this.my_radioButton5.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton5.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton5.Name = "my_radioButton5";
-            this.my_radioButton5.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton5.Size = new System.Drawing.Size(81, 24);
-            this.my_radioButton5.TabIndex = 4;
-            this.my_radioButton5.TabStop = true;
-            this.my_radioButton5.Text = "Dodge";
-            this.my_radioButton5.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton5.UseVisualStyleBackColor = true;
-            this.my_radioButton5.CheckedChanged += new System.EventHandler(this.my_radioButton5_CheckedChanged);
-            // 
-            // my_radioButton4
-            // 
-            this.my_radioButton4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton4.AutoSize = true;
-            this.my_radioButton4.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton4.Location = new System.Drawing.Point(2, 46);
-            this.my_radioButton4.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton4.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton4.Name = "my_radioButton4";
-            this.my_radioButton4.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton4.Size = new System.Drawing.Size(81, 24);
-            this.my_radioButton4.TabIndex = 3;
-            this.my_radioButton4.TabStop = true;
-            this.my_radioButton4.Text = "Toyota";
-            this.my_radioButton4.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton4.UseVisualStyleBackColor = true;
-            this.my_radioButton4.CheckedChanged += new System.EventHandler(this.my_radioButton4_CheckedChanged);
-            // 
-            // my_radioButton3
-            // 
-            this.my_radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton3.AutoSize = true;
-            this.my_radioButton3.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton3.Location = new System.Drawing.Point(180, 7);
-            this.my_radioButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton3.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton3.Name = "my_radioButton3";
-            this.my_radioButton3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton3.Size = new System.Drawing.Size(66, 24);
-            this.my_radioButton3.TabIndex = 2;
-            this.my_radioButton3.TabStop = true;
-            this.my_radioButton3.Text = "Jeep";
-            this.my_radioButton3.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton3.UseVisualStyleBackColor = true;
-            this.my_radioButton3.CheckedChanged += new System.EventHandler(this.my_radioButton3_CheckedChanged);
-            // 
-            // my_radioButton2
-            // 
-            this.my_radioButton2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton2.AutoSize = true;
-            this.my_radioButton2.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton2.Location = new System.Drawing.Point(91, 7);
-            this.my_radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton2.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton2.Name = "my_radioButton2";
-            this.my_radioButton2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton2.Size = new System.Drawing.Size(79, 24);
-            this.my_radioButton2.TabIndex = 1;
-            this.my_radioButton2.TabStop = true;
-            this.my_radioButton2.Text = "Nissan";
-            this.my_radioButton2.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton2.UseVisualStyleBackColor = true;
-            this.my_radioButton2.CheckedChanged += new System.EventHandler(this.my_radioButton2_CheckedChanged);
-            // 
-            // my_radioButton1
-            // 
-            this.my_radioButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_radioButton1.AutoSize = true;
-            this.my_radioButton1.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.my_radioButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.my_radioButton1.Location = new System.Drawing.Point(2, 7);
-            this.my_radioButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.my_radioButton1.MinimumSize = new System.Drawing.Size(0, 17);
-            this.my_radioButton1.Name = "my_radioButton1";
-            this.my_radioButton1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.my_radioButton1.Size = new System.Drawing.Size(65, 24);
-            this.my_radioButton1.TabIndex = 0;
-            this.my_radioButton1.TabStop = true;
-            this.my_radioButton1.Text = "Ford";
-            this.my_radioButton1.UnCheckedColor = System.Drawing.Color.Gray;
-            this.my_radioButton1.UseVisualStyleBackColor = true;
-            this.my_radioButton1.CheckedChanged += new System.EventHandler(this.my_radioButton1_CheckedChanged);
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.my_textBoxOtro, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(375, 260);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(81, 119);
-            this.tableLayoutPanel5.TabIndex = 17;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
-            // 
-            // my_textBoxOtro
-            // 
-            this.my_textBoxOtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.my_textBoxOtro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
-            this.my_textBoxOtro.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_textBoxOtro.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.my_textBoxOtro.BorderRadius = 0;
-            this.my_textBoxOtro.BorderSize = 2;
-            this.my_textBoxOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_textBoxOtro.ForeColor = System.Drawing.Color.White;
-            this.my_textBoxOtro.Location = new System.Drawing.Point(4, 86);
-            this.my_textBoxOtro.Margin = new System.Windows.Forms.Padding(4);
-            this.my_textBoxOtro.Multiline = false;
-            this.my_textBoxOtro.Name = "my_textBoxOtro";
-            this.my_textBoxOtro.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.my_textBoxOtro.PasswordChar = false;
-            this.my_textBoxOtro.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.my_textBoxOtro.PlaceholderText = "";
-            this.my_textBoxOtro.Size = new System.Drawing.Size(73, 29);
-            this.my_textBoxOtro.TabIndex = 16;
-            this.my_textBoxOtro.Texts = "";
-            this.my_textBoxOtro.UnderlinedStyle = false;
-            this.my_textBoxOtro.Visible = false;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(35, 301);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 18);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Precio:";
             // 
             // Form_autos
             // 
@@ -767,9 +562,6 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -796,21 +588,12 @@
         private System.Windows.Forms.Label Marca;
         private System.Windows.Forms.Label color;
         private My_controls.My_textBox my_color;
-        private My_controls.My_button my_botonAceptar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private My_controls.My_button my_botonSalir;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private My_controls.My_radioButton my_radioButton6;
-        private My_controls.My_radioButton my_radioButton5;
-        private My_controls.My_radioButton my_radioButton4;
-        private My_controls.My_radioButton my_radioButton3;
-        private My_controls.My_radioButton my_radioButton2;
-        private My_controls.My_radioButton my_radioButton1;
-        private My_controls.My_radioButton my_radioButton9;
-        private My_controls.My_radioButton my_radioButton8;
-        private My_controls.My_radioButton my_radioButton7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private My_controls.My_textBox my_textBoxOtro;
+        private My_controls.My_button my_botonAceptar;
+        private My_controls.My_textBox my_marca;
+        private My_controls.My_textBox my_precio;
+        private System.Windows.Forms.Label label1;
     }
 }
 

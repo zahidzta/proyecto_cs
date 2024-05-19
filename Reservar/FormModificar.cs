@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reservar
 {
-    public partial class Ventana_base : Form
+    public partial class FormModificar : Form
     {
-        public Ventana_base()
+        public FormModificar()
         {
             InitializeComponent();
             //Instrucción para que al momento de maximizar la pantalla no cubra la barra de herramientas
@@ -112,7 +112,5 @@ namespace Reservar
             Main_page main_Page = new Main_page();  
             main_Page.Show();   
         }
-
-
     }
 }
