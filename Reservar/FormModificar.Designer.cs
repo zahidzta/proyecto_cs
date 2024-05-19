@@ -36,25 +36,26 @@
             this.img_salir = new System.Windows.Forms.PictureBox();
             this.ventana_name = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.my_newUser = new Reservar.My_controls.My_textBox();
             this.User = new System.Windows.Forms.Label();
-            this.my_NewPassword = new Reservar.My_controls.My_textBox();
             this.contrasenia = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.my_botonAceptar2 = new Reservar.My_controls.My_button();
+            this.titulo = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label_datosAuto = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_entregarAuto = new Reservar.My_controls.My_button();
+            this.button_eliminarCuenta = new Reservar.My_controls.My_button();
+            this.my_newUser = new Reservar.My_controls.My_textBox();
+            this.my_NewPassword = new Reservar.My_controls.My_textBox();
+            this.my_boton_aceptar = new Reservar.My_controls.My_button();
             this.my_botonSalir2 = new Reservar.My_controls.My_button();
             this.my_pictureBox2 = new Reservar.My_controls.My_pictureBox();
             this.my_pictureBox3 = new Reservar.My_controls.My_pictureBox();
-            this.titulo = new System.Windows.Forms.Label();
             this.my_pictureBox1 = new Reservar.My_controls.My_pictureBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button_eliminarCuenta = new Reservar.My_controls.My_button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label_datosAuto = new System.Windows.Forms.Label();
-            this.button_entregarAuto = new Reservar.My_controls.My_button();
+            this.button_regresar = new Reservar.My_controls.My_button();
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
@@ -62,12 +63,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_salir)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // control_bar
@@ -172,6 +173,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.58756F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.60884F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.8036F));
+            this.tableLayoutPanel1.Controls.Add(this.button_regresar, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.my_newUser, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.User, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.my_NewPassword, 1, 2);
@@ -180,9 +182,9 @@
             this.tableLayoutPanel1.Controls.Add(this.my_pictureBox2, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.my_pictureBox3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.titulo, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.my_pictureBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.my_pictureBox1, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 29);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -193,65 +195,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(458, 317);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // my_newUser
-            // 
-            this.my_newUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.my_newUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
-            this.my_newUser.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_newUser.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.my_newUser.BorderRadius = 0;
-            this.my_newUser.BorderSize = 2;
-            this.my_newUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.my_newUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_newUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.my_newUser.Location = new System.Drawing.Point(147, 128);
-            this.my_newUser.Multiline = false;
-            this.my_newUser.Name = "my_newUser";
-            this.my_newUser.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.my_newUser.PasswordChar = false;
-            this.my_newUser.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.my_newUser.PlaceholderText = "";
-            this.my_newUser.Size = new System.Drawing.Size(216, 29);
-            this.my_newUser.TabIndex = 1;
-            this.my_newUser.Texts = "";
-            this.my_newUser.UnderlinedStyle = false;
-            // 
             // User
             // 
             this.User.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.User.AutoSize = true;
             this.User.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User.ForeColor = System.Drawing.SystemColors.Control;
-            this.User.Location = new System.Drawing.Point(19, 133);
+            this.User.Location = new System.Drawing.Point(19, 135);
             this.User.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(123, 18);
             this.User.TabIndex = 3;
             this.User.Text = "Nuevo nombre:";
-            // 
-            // my_NewPassword
-            // 
-            this.my_NewPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.my_NewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
-            this.my_NewPassword.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_NewPassword.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.my_NewPassword.BorderRadius = 0;
-            this.my_NewPassword.BorderSize = 2;
-            this.my_NewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.my_NewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_NewPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.my_NewPassword.Location = new System.Drawing.Point(147, 177);
-            this.my_NewPassword.Multiline = false;
-            this.my_NewPassword.Name = "my_NewPassword";
-            this.my_NewPassword.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.my_NewPassword.PasswordChar = false;
-            this.my_NewPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.my_NewPassword.PlaceholderText = "";
-            this.my_NewPassword.Size = new System.Drawing.Size(216, 29);
-            this.my_NewPassword.TabIndex = 8;
-            this.my_NewPassword.Tag = "fssfssffs";
-            this.my_NewPassword.Texts = "";
-            this.my_NewPassword.UnderlinedStyle = false;
             // 
             // contrasenia
             // 
@@ -259,106 +214,27 @@
             this.contrasenia.AutoSize = true;
             this.contrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrasenia.ForeColor = System.Drawing.SystemColors.Control;
-            this.contrasenia.Location = new System.Drawing.Point(45, 174);
+            this.contrasenia.Location = new System.Drawing.Point(45, 176);
             this.contrasenia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.contrasenia.Name = "contrasenia";
             this.contrasenia.Size = new System.Drawing.Size(97, 36);
             this.contrasenia.TabIndex = 10;
             this.contrasenia.Text = "Nueva contraseña:";
-            this.contrasenia.Click += new System.EventHandler(this.color_Click);
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.my_botonAceptar2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.my_boton_aceptar, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.my_botonSalir2, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(146, 259);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(146, 261);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(218, 53);
             this.tableLayoutPanel3.TabIndex = 15;
-            // 
-            // my_botonAceptar2
-            // 
-            this.my_botonAceptar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.my_botonAceptar2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonAceptar2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonAceptar2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.my_botonAceptar2.BorderRadius = 0;
-            this.my_botonAceptar2.BorderSize = 0;
-            this.my_botonAceptar2.FlatAppearance.BorderSize = 0;
-            this.my_botonAceptar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.my_botonAceptar2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_botonAceptar2.ForeColor = System.Drawing.Color.White;
-            this.my_botonAceptar2.Location = new System.Drawing.Point(3, 10);
-            this.my_botonAceptar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.my_botonAceptar2.Name = "my_botonAceptar2";
-            this.my_botonAceptar2.Size = new System.Drawing.Size(104, 32);
-            this.my_botonAceptar2.TabIndex = 13;
-            this.my_botonAceptar2.Text = "Aceptar";
-            this.my_botonAceptar2.TextColor = System.Drawing.Color.White;
-            this.my_botonAceptar2.UseVisualStyleBackColor = false;
-            this.my_botonAceptar2.Click += new System.EventHandler(this.my_botonAceptar2_Click);
-            // 
-            // my_botonSalir2
-            // 
-            this.my_botonSalir2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.my_botonSalir2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonSalir2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.my_botonSalir2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.my_botonSalir2.BorderRadius = 0;
-            this.my_botonSalir2.BorderSize = 0;
-            this.my_botonSalir2.FlatAppearance.BorderSize = 0;
-            this.my_botonSalir2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.my_botonSalir2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.my_botonSalir2.ForeColor = System.Drawing.Color.White;
-            this.my_botonSalir2.Location = new System.Drawing.Point(111, 10);
-            this.my_botonSalir2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.my_botonSalir2.Name = "my_botonSalir2";
-            this.my_botonSalir2.Size = new System.Drawing.Size(105, 32);
-            this.my_botonSalir2.TabIndex = 14;
-            this.my_botonSalir2.Text = "Salir";
-            this.my_botonSalir2.TextColor = System.Drawing.Color.White;
-            this.my_botonSalir2.UseVisualStyleBackColor = false;
-            this.my_botonSalir2.Click += new System.EventHandler(this.my_botonSalir2_Click);
-            // 
-            // my_pictureBox2
-            // 
-            this.my_pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_pictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.my_pictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.my_pictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
-            this.my_pictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.my_pictureBox2.BorderSize = 0;
-            this.my_pictureBox2.GradientAngle = 50F;
-            this.my_pictureBox2.Image = global::Reservar.Properties.Resources.iniciar_sesion;
-            this.my_pictureBox2.Location = new System.Drawing.Point(369, 172);
-            this.my_pictureBox2.Name = "my_pictureBox2";
-            this.my_pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.my_pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.my_pictureBox2.TabIndex = 16;
-            this.my_pictureBox2.TabStop = false;
-            // 
-            // my_pictureBox3
-            // 
-            this.my_pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.my_pictureBox3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.my_pictureBox3.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.my_pictureBox3.BorderColor2 = System.Drawing.Color.HotPink;
-            this.my_pictureBox3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.my_pictureBox3.BorderSize = 0;
-            this.my_pictureBox3.GradientAngle = 50F;
-            this.my_pictureBox3.Image = global::Reservar.Properties.Resources.nombre;
-            this.my_pictureBox3.Location = new System.Drawing.Point(369, 122);
-            this.my_pictureBox3.Name = "my_pictureBox3";
-            this.my_pictureBox3.Size = new System.Drawing.Size(40, 40);
-            this.my_pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.my_pictureBox3.TabIndex = 17;
-            this.my_pictureBox3.TabStop = false;
             // 
             // titulo
             // 
@@ -366,31 +242,12 @@
             this.titulo.AutoSize = true;
             this.titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.ForeColor = System.Drawing.SystemColors.Control;
-            this.titulo.Location = new System.Drawing.Point(178, 46);
+            this.titulo.Location = new System.Drawing.Point(178, 47);
             this.titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.titulo.Name = "titulo";
             this.titulo.Size = new System.Drawing.Size(153, 24);
             this.titulo.TabIndex = 2;
             this.titulo.Text = "Modificar Datos";
-            this.titulo.Click += new System.EventHandler(this.titulo_Click);
-            // 
-            // my_pictureBox1
-            // 
-            this.my_pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.my_pictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.my_pictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.my_pictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.my_pictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.my_pictureBox1.BorderSize = 2;
-            this.my_pictureBox1.GradientAngle = 50F;
-            this.my_pictureBox1.Image = global::Reservar.Properties.Resources.WhatsApp_Image_2024_05_12_at_19_18_28;
-            this.my_pictureBox1.Location = new System.Drawing.Point(65, 20);
-            this.my_pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.my_pictureBox1.Name = "my_pictureBox1";
-            this.my_pictureBox1.Size = new System.Drawing.Size(77, 77);
-            this.my_pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.my_pictureBox1.TabIndex = 0;
-            this.my_pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel4
             // 
@@ -407,17 +264,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(469, 138);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.panel1.Controls.Add(this.button_eliminarCuenta);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(17, 15);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 107);
-            this.panel1.TabIndex = 0;
-            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -430,35 +276,16 @@
             this.panel2.Size = new System.Drawing.Size(200, 107);
             this.panel2.TabIndex = 1;
             // 
-            // label1
+            // label_datosAuto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(31, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Eliminar cuenta";
-            // 
-            // button_eliminarCuenta
-            // 
-            this.button_eliminarCuenta.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button_eliminarCuenta.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.button_eliminarCuenta.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.button_eliminarCuenta.BorderRadius = 10;
-            this.button_eliminarCuenta.BorderSize = 0;
-            this.button_eliminarCuenta.FlatAppearance.BorderSize = 0;
-            this.button_eliminarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_eliminarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_eliminarCuenta.ForeColor = System.Drawing.Color.White;
-            this.button_eliminarCuenta.Location = new System.Drawing.Point(26, 53);
-            this.button_eliminarCuenta.Name = "button_eliminarCuenta";
-            this.button_eliminarCuenta.Size = new System.Drawing.Size(150, 44);
-            this.button_eliminarCuenta.TabIndex = 1;
-            this.button_eliminarCuenta.Text = "Click para eliminar cuenta";
-            this.button_eliminarCuenta.TextColor = System.Drawing.Color.White;
-            this.button_eliminarCuenta.UseVisualStyleBackColor = false;
+            this.label_datosAuto.AutoSize = true;
+            this.label_datosAuto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_datosAuto.ForeColor = System.Drawing.Color.White;
+            this.label_datosAuto.Location = new System.Drawing.Point(6, 40);
+            this.label_datosAuto.Name = "label_datosAuto";
+            this.label_datosAuto.Size = new System.Drawing.Size(90, 17);
+            this.label_datosAuto.TabIndex = 2;
+            this.label_datosAuto.Text = "Auto rentado";
             // 
             // label2
             // 
@@ -471,16 +298,27 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Auto rentado";
             // 
-            // label_datosAuto
+            // panel1
             // 
-            this.label_datosAuto.AutoSize = true;
-            this.label_datosAuto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_datosAuto.ForeColor = System.Drawing.Color.White;
-            this.label_datosAuto.Location = new System.Drawing.Point(6, 40);
-            this.label_datosAuto.Name = "label_datosAuto";
-            this.label_datosAuto.Size = new System.Drawing.Size(90, 17);
-            this.label_datosAuto.TabIndex = 2;
-            this.label_datosAuto.Text = "Auto rentado";
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.panel1.Controls.Add(this.button_eliminarCuenta);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(17, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 107);
+            this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Eliminar cuenta";
             // 
             // button_entregarAuto
             // 
@@ -500,6 +338,192 @@
             this.button_entregarAuto.Text = "Entregar auto";
             this.button_entregarAuto.TextColor = System.Drawing.Color.White;
             this.button_entregarAuto.UseVisualStyleBackColor = false;
+            this.button_entregarAuto.Click += new System.EventHandler(this.button_entregarAuto_Click);
+            // 
+            // button_eliminarCuenta
+            // 
+            this.button_eliminarCuenta.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_eliminarCuenta.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_eliminarCuenta.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.button_eliminarCuenta.BorderRadius = 10;
+            this.button_eliminarCuenta.BorderSize = 0;
+            this.button_eliminarCuenta.FlatAppearance.BorderSize = 0;
+            this.button_eliminarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_eliminarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_eliminarCuenta.ForeColor = System.Drawing.Color.White;
+            this.button_eliminarCuenta.Location = new System.Drawing.Point(26, 53);
+            this.button_eliminarCuenta.Name = "button_eliminarCuenta";
+            this.button_eliminarCuenta.Size = new System.Drawing.Size(150, 44);
+            this.button_eliminarCuenta.TabIndex = 1;
+            this.button_eliminarCuenta.Text = "Click para eliminar cuenta";
+            this.button_eliminarCuenta.TextColor = System.Drawing.Color.White;
+            this.button_eliminarCuenta.UseVisualStyleBackColor = false;
+            this.button_eliminarCuenta.Click += new System.EventHandler(this.button_eliminarCuenta_Click);
+            // 
+            // my_newUser
+            // 
+            this.my_newUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.my_newUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
+            this.my_newUser.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_newUser.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.my_newUser.BorderRadius = 0;
+            this.my_newUser.BorderSize = 2;
+            this.my_newUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.my_newUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_newUser.ForeColor = System.Drawing.Color.White;
+            this.my_newUser.Location = new System.Drawing.Point(148, 130);
+            this.my_newUser.Margin = new System.Windows.Forms.Padding(4);
+            this.my_newUser.Multiline = false;
+            this.my_newUser.Name = "my_newUser";
+            this.my_newUser.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.my_newUser.PasswordChar = false;
+            this.my_newUser.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.my_newUser.PlaceholderText = "";
+            this.my_newUser.Size = new System.Drawing.Size(214, 29);
+            this.my_newUser.TabIndex = 1;
+            this.my_newUser.Texts = "";
+            this.my_newUser.UnderlinedStyle = false;
+            // 
+            // my_NewPassword
+            // 
+            this.my_NewPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.my_NewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(76)))));
+            this.my_NewPassword.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_NewPassword.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.my_NewPassword.BorderRadius = 0;
+            this.my_NewPassword.BorderSize = 2;
+            this.my_NewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.my_NewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_NewPassword.ForeColor = System.Drawing.Color.White;
+            this.my_NewPassword.Location = new System.Drawing.Point(148, 179);
+            this.my_NewPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.my_NewPassword.Multiline = false;
+            this.my_NewPassword.Name = "my_NewPassword";
+            this.my_NewPassword.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.my_NewPassword.PasswordChar = false;
+            this.my_NewPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.my_NewPassword.PlaceholderText = "";
+            this.my_NewPassword.Size = new System.Drawing.Size(214, 29);
+            this.my_NewPassword.TabIndex = 8;
+            this.my_NewPassword.Tag = "fssfssffs";
+            this.my_NewPassword.Texts = "";
+            this.my_NewPassword.UnderlinedStyle = false;
+            // 
+            // my_boton_aceptar
+            // 
+            this.my_boton_aceptar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.my_boton_aceptar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_boton_aceptar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_boton_aceptar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.my_boton_aceptar.BorderRadius = 0;
+            this.my_boton_aceptar.BorderSize = 0;
+            this.my_boton_aceptar.FlatAppearance.BorderSize = 0;
+            this.my_boton_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.my_boton_aceptar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_boton_aceptar.ForeColor = System.Drawing.Color.White;
+            this.my_boton_aceptar.Location = new System.Drawing.Point(3, 10);
+            this.my_boton_aceptar.Margin = new System.Windows.Forms.Padding(2);
+            this.my_boton_aceptar.Name = "my_boton_aceptar";
+            this.my_boton_aceptar.Size = new System.Drawing.Size(104, 32);
+            this.my_boton_aceptar.TabIndex = 13;
+            this.my_boton_aceptar.Text = "Aceptar";
+            this.my_boton_aceptar.TextColor = System.Drawing.Color.White;
+            this.my_boton_aceptar.UseVisualStyleBackColor = false;
+            this.my_boton_aceptar.Click += new System.EventHandler(this.my_botonAceptar2_Click);
+            // 
+            // my_botonSalir2
+            // 
+            this.my_botonSalir2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.my_botonSalir2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_botonSalir2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.my_botonSalir2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.my_botonSalir2.BorderRadius = 0;
+            this.my_botonSalir2.BorderSize = 0;
+            this.my_botonSalir2.FlatAppearance.BorderSize = 0;
+            this.my_botonSalir2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.my_botonSalir2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.my_botonSalir2.ForeColor = System.Drawing.Color.White;
+            this.my_botonSalir2.Location = new System.Drawing.Point(111, 10);
+            this.my_botonSalir2.Margin = new System.Windows.Forms.Padding(2);
+            this.my_botonSalir2.Name = "my_botonSalir2";
+            this.my_botonSalir2.Size = new System.Drawing.Size(105, 32);
+            this.my_botonSalir2.TabIndex = 14;
+            this.my_botonSalir2.Text = "Salir";
+            this.my_botonSalir2.TextColor = System.Drawing.Color.White;
+            this.my_botonSalir2.UseVisualStyleBackColor = false;
+            this.my_botonSalir2.Click += new System.EventHandler(this.my_botonSalir2_Click);
+            // 
+            // my_pictureBox2
+            // 
+            this.my_pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.my_pictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.my_pictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.my_pictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
+            this.my_pictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.my_pictureBox2.BorderSize = 0;
+            this.my_pictureBox2.GradientAngle = 50F;
+            this.my_pictureBox2.Image = global::Reservar.Properties.Resources.iniciar_sesion;
+            this.my_pictureBox2.Location = new System.Drawing.Point(369, 174);
+            this.my_pictureBox2.Name = "my_pictureBox2";
+            this.my_pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.my_pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.my_pictureBox2.TabIndex = 16;
+            this.my_pictureBox2.TabStop = false;
+            // 
+            // my_pictureBox3
+            // 
+            this.my_pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.my_pictureBox3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.my_pictureBox3.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.my_pictureBox3.BorderColor2 = System.Drawing.Color.HotPink;
+            this.my_pictureBox3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.my_pictureBox3.BorderSize = 0;
+            this.my_pictureBox3.GradientAngle = 50F;
+            this.my_pictureBox3.Image = global::Reservar.Properties.Resources.nombre;
+            this.my_pictureBox3.Location = new System.Drawing.Point(369, 124);
+            this.my_pictureBox3.Name = "my_pictureBox3";
+            this.my_pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.my_pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.my_pictureBox3.TabIndex = 17;
+            this.my_pictureBox3.TabStop = false;
+            // 
+            // my_pictureBox1
+            // 
+            this.my_pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.my_pictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.my_pictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.my_pictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.my_pictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.my_pictureBox1.BorderSize = 2;
+            this.my_pictureBox1.GradientAngle = 50F;
+            this.my_pictureBox1.Image = global::Reservar.Properties.Resources.WhatsApp_Image_2024_05_12_at_19_18_28;
+            this.my_pictureBox1.Location = new System.Drawing.Point(379, 21);
+            this.my_pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.my_pictureBox1.Name = "my_pictureBox1";
+            this.my_pictureBox1.Size = new System.Drawing.Size(77, 77);
+            this.my_pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.my_pictureBox1.TabIndex = 0;
+            this.my_pictureBox1.TabStop = false;
+            // 
+            // button_regresar
+            // 
+            this.button_regresar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_regresar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.button_regresar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.button_regresar.BorderRadius = 10;
+            this.button_regresar.BorderSize = 0;
+            this.button_regresar.FlatAppearance.BorderSize = 0;
+            this.button_regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_regresar.ForeColor = System.Drawing.Color.White;
+            this.button_regresar.Location = new System.Drawing.Point(3, 3);
+            this.button_regresar.Name = "button_regresar";
+            this.button_regresar.Size = new System.Drawing.Size(97, 29);
+            this.button_regresar.TabIndex = 18;
+            this.button_regresar.Text = "Regresar";
+            this.button_regresar.TextColor = System.Drawing.Color.White;
+            this.button_regresar.UseVisualStyleBackColor = false;
+            this.button_regresar.Click += new System.EventHandler(this.button_regresar_Click);
             // 
             // FormModificar
             // 
@@ -525,14 +549,14 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_pictureBox1)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -552,7 +576,7 @@
         private System.Windows.Forms.Label User;
         private My_controls.My_textBox my_NewPassword;
         private My_controls.My_button my_botonSalir2;
-        private My_controls.My_button my_botonAceptar2;
+        private My_controls.My_button my_boton_aceptar;
         private System.Windows.Forms.Label contrasenia;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private My_controls.My_pictureBox my_pictureBox2;
@@ -565,6 +589,7 @@
         private My_controls.My_button button_entregarAuto;
         private System.Windows.Forms.Label label_datosAuto;
         private System.Windows.Forms.Label label2;
+        private My_controls.My_button button_regresar;
     }
 }
 

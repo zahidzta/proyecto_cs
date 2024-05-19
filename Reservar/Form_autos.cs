@@ -102,7 +102,7 @@ namespace Reservar
         }
 
         //Método para guardar un nuevo auto
-        private static void GuardarDatos(string marca, string modelo, string color, string placas, string anio)
+        private static void GuardarDatos(string marca, string modelo, string color, string placas, string anio, string precio)
         {
             //Nombre del arvhivo que se va a crear o buscar para guardar datos
             string filePath = "xmlAutos.xml";
@@ -181,6 +181,9 @@ namespace Reservar
             element.InnerText = "";
             carNode.AppendChild(element);
 
+            element = xmlDoc.CreateElement("Precio");
+            element.InnerText = precio;
+            carNode.AppendChild(element);
 
             rootNode = xmlDoc.SelectSingleNode("/Autos");
             //Se agrega el nuevo auto
@@ -249,7 +252,7 @@ namespace Reservar
             if (CamposLlenos(my_modelo, my_anio, my_color, my_placas, my_marca, my_precio))
             {
                 //Se guardan los datos
-                GuardarDatos(my_marca.Texts, my_modelo.Texts, my_color.Texts, my_placas.Texts, my_anio.Texts);
+                GuardarDatos(my_marca.Texts, my_modelo.Texts, my_color.Texts, my_placas.Texts, my_anio.Texts, my_precio.Texts);
                 //Se limpian los campos de texto
                 my_modelo.Texts = "";
                 my_anio.Texts = "";

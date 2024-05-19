@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_page));
             this.control_bar = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -38,10 +39,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_actualizar = new System.Windows.Forms.PictureBox();
             this.label_nombre_user = new System.Windows.Forms.Label();
             this.my_button_cerrarSesion = new Reservar.My_controls.My_button();
             this.panel_catalogo = new System.Windows.Forms.Panel();
+            this.imageList_carros = new System.Windows.Forms.ImageList(this.components);
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
@@ -49,7 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_salir)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_actualizar)).BeginInit();
             this.SuspendLayout();
             // 
             // control_bar
@@ -181,7 +183,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.50929F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.4052F));
             this.tableLayoutPanel3.Controls.Add(this.label_nombre_user, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox_actualizar, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.my_button_cerrarSesion, 2, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(478, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -190,17 +192,18 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(269, 43);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureBox_actualizar
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Reservar.Properties.Resources.nombre;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_actualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox_actualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_actualizar.Image = global::Reservar.Properties.Resources.nombre;
+            this.pictureBox_actualizar.Location = new System.Drawing.Point(96, 4);
+            this.pictureBox_actualizar.Name = "pictureBox_actualizar";
+            this.pictureBox_actualizar.Size = new System.Drawing.Size(58, 34);
+            this.pictureBox_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_actualizar.TabIndex = 0;
+            this.pictureBox_actualizar.TabStop = false;
+            this.pictureBox_actualizar.Click += new System.EventHandler(this.pictureBox_actualizar_Click);
             // 
             // label_nombre_user
             // 
@@ -233,6 +236,7 @@
             this.my_button_cerrarSesion.Text = "Cerrar sesión";
             this.my_button_cerrarSesion.TextColor = System.Drawing.Color.White;
             this.my_button_cerrarSesion.UseVisualStyleBackColor = false;
+            this.my_button_cerrarSesion.Click += new System.EventHandler(this.my_button_cerrarSesion_Click);
             // 
             // panel_catalogo
             // 
@@ -242,6 +246,16 @@
             this.panel_catalogo.Name = "panel_catalogo";
             this.panel_catalogo.Size = new System.Drawing.Size(750, 471);
             this.panel_catalogo.TabIndex = 2;
+            // 
+            // imageList_carros
+            // 
+            this.imageList_carros.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList_carros.ImageStream")));
+            this.imageList_carros.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList_carros.Images.SetKeyName(0, "Lotus_Esprit.jpeg");
+            this.imageList_carros.Images.SetKeyName(1, "audi_quattro.jpeg");
+            this.imageList_carros.Images.SetKeyName(2, "jeep.jpeg");
+            this.imageList_carros.Images.SetKeyName(3, "Grand_National.jpeg");
+            this.imageList_carros.Images.SetKeyName(4, "mustang_foxBody.jpeg");
             // 
             // Main_page
             // 
@@ -268,7 +282,7 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_actualizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,10 +298,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox_actualizar;
         private System.Windows.Forms.Label label_nombre_user;
         private My_controls.My_button my_button_cerrarSesion;
         private System.Windows.Forms.Panel panel_catalogo;
+        private System.Windows.Forms.ImageList imageList_carros;
     }
 }
 
