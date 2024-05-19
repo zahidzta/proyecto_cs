@@ -106,7 +106,7 @@ namespace Reservar
             this.Hide();
         }
 
-        private bool Iniciar_sesion(string correo, string password)
+        private XmlNode Iniciar_sesion(string correo, string password)
         {
 
             string filePath = "xmlUsers.xml";
@@ -120,13 +120,12 @@ namespace Reservar
 
                 if (correo == user.SelectSingleNode("correo").InnerText && password == user.SelectSingleNode("password").InnerText)
                 {
-
-                    return true;
+                    return user;
                 }
 
             }
             MessageBox.Show("Datos Incorrectos");
-            return false;
+            return null;
 
 
         }
@@ -142,14 +141,23 @@ namespace Reservar
                 label_errores.Text = "Faltan campos por llenar";
                 valoreCorrectos = false;
             }
+            XmlNode user = Iniciar_sesion(txtBox_email.Texts, textBox_password.Texts);
 
             //Se abre la ventana principal en el caso de que los campos sean correctos
-            if (valoreCorrectos && Iniciar_sesion(txtBox_email.Texts, textBox_password.Texts))
+            if (valoreCorrectos && user != null)
             {
-
-                Main_page ventanaPrincipal = new Main_page();
-                ventanaPrincipal.Show();
-                this.Hide();
+                if (user.SelectSingleNode("Admin").InnerText == "0")
+                {
+                    Main_page ventanaPrincipal = new Main_page();
+                    ventanaPrincipal.Show();
+                    this.Hide();
+                } else
+                {
+                    Form_autos form_admin = new Form_autos();
+                    form_admin.Show();
+                    this.Hide();
+                }
+                
             }
         }
 
