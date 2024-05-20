@@ -164,5 +164,44 @@
   <ItemGroup>
     <None Include="Resources\nombre.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NISSAN.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NISSANZPROTOREAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FORDRAPTOR2024REALAHORASI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TESLAMODELSREAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NISSANGTR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2024-05-19 165538.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toyotacorola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audia8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmwm4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corvettestringay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-04-02 at 7.53.22 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZETACOMPANY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

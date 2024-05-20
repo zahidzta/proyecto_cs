@@ -84,5 +84,15 @@ namespace Reservar
             pictureBox.BackColor = Color.FromArgb(15, 12, 23);
         }
         #endregion
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
