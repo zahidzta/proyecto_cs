@@ -39,11 +39,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox_actualizar = new System.Windows.Forms.PictureBox();
             this.label_nombre_user = new System.Windows.Forms.Label();
+            this.pictureBox_actualizar = new System.Windows.Forms.PictureBox();
             this.my_button_cerrarSesion = new Reservar.My_controls.My_button();
             this.panel_catalogo = new System.Windows.Forms.Panel();
             this.imageList_carros = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.control_bar.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_minimizar)).BeginInit();
@@ -52,6 +53,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_actualizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // control_bar
@@ -150,16 +152,18 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.2F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 30);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(750, 49);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -169,7 +173,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(62, 9);
+            this.label1.Location = new System.Drawing.Point(209, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(251, 31);
             this.label1.TabIndex = 0;
@@ -185,25 +189,12 @@
             this.tableLayoutPanel3.Controls.Add(this.label_nombre_user, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox_actualizar, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.my_button_cerrarSesion, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(478, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(503, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(269, 43);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(244, 43);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // pictureBox_actualizar
-            // 
-            this.pictureBox_actualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox_actualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox_actualizar.Image = global::Reservar.Properties.Resources.nombre;
-            this.pictureBox_actualizar.Location = new System.Drawing.Point(96, 4);
-            this.pictureBox_actualizar.Name = "pictureBox_actualizar";
-            this.pictureBox_actualizar.Size = new System.Drawing.Size(58, 34);
-            this.pictureBox_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_actualizar.TabIndex = 0;
-            this.pictureBox_actualizar.TabStop = false;
-            this.pictureBox_actualizar.Click += new System.EventHandler(this.pictureBox_actualizar_Click);
             // 
             // label_nombre_user
             // 
@@ -211,11 +202,24 @@
             this.label_nombre_user.AutoSize = true;
             this.label_nombre_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_nombre_user.ForeColor = System.Drawing.Color.White;
-            this.label_nombre_user.Location = new System.Drawing.Point(24, 4);
+            this.label_nombre_user.Location = new System.Drawing.Point(16, 4);
             this.label_nombre_user.Name = "label_nombre_user";
             this.label_nombre_user.Size = new System.Drawing.Size(62, 34);
             this.label_nombre_user.TabIndex = 1;
             this.label_nombre_user.Text = "Nombre usuario";
+            // 
+            // pictureBox_actualizar
+            // 
+            this.pictureBox_actualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox_actualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_actualizar.Image = global::Reservar.Properties.Resources.nombre;
+            this.pictureBox_actualizar.Location = new System.Drawing.Point(85, 4);
+            this.pictureBox_actualizar.Name = "pictureBox_actualizar";
+            this.pictureBox_actualizar.Size = new System.Drawing.Size(58, 34);
+            this.pictureBox_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_actualizar.TabIndex = 0;
+            this.pictureBox_actualizar.TabStop = false;
+            this.pictureBox_actualizar.Click += new System.EventHandler(this.pictureBox_actualizar_Click);
             // 
             // my_button_cerrarSesion
             // 
@@ -229,9 +233,9 @@
             this.my_button_cerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.my_button_cerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.my_button_cerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.my_button_cerrarSesion.Location = new System.Drawing.Point(169, 9);
+            this.my_button_cerrarSesion.Location = new System.Drawing.Point(150, 9);
             this.my_button_cerrarSesion.Name = "my_button_cerrarSesion";
-            this.my_button_cerrarSesion.Size = new System.Drawing.Size(93, 25);
+            this.my_button_cerrarSesion.Size = new System.Drawing.Size(91, 25);
             this.my_button_cerrarSesion.TabIndex = 2;
             this.my_button_cerrarSesion.Text = "Cerrar sesión";
             this.my_button_cerrarSesion.TextColor = System.Drawing.Color.White;
@@ -256,6 +260,17 @@
             this.imageList_carros.Images.SetKeyName(2, "jeep.jpeg");
             this.imageList_carros.Images.SetKeyName(3, "Grand_National.jpeg");
             this.imageList_carros.Images.SetKeyName(4, "mustang_foxBody.jpeg");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Reservar.Properties.Resources.WhatsApp_Image_2024_05_12_at_19_15_08;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Main_page
             // 
@@ -283,6 +298,7 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_actualizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,6 +319,7 @@
         private My_controls.My_button my_button_cerrarSesion;
         private System.Windows.Forms.Panel panel_catalogo;
         private System.Windows.Forms.ImageList imageList_carros;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
