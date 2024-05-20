@@ -89,7 +89,6 @@ namespace Reservar
                 tablaAutos.RowCount += 1;
                 //Tamaño de la nueva fila
                 tablaAutos.RowStyles.Add(new RowStyle(SizeType.Absolute, 200));
-                tablaAutos.BackColor = Color.White;
                 //Se crea una nueva tabla que va a contener la información del auto
                 TableLayoutPanel tableInfoAuto = GenerarTablaDatos();
                 //Se genera una imagen aleatoria
@@ -111,28 +110,33 @@ namespace Reservar
 
                 //Se añade la información que corresponde del auto a los labels
                 label_marca.Text = "Marca: " + auto.SelectSingleNode("Marca").InnerText;
+                label_marca.ForeColor = Color.White;
                 tableInfoAuto.Controls.Add(label_marca, 0, 0);
 
                 label_modelo.Text = "Modelo: " + auto.SelectSingleNode("Modelo").InnerText;
+                label_modelo.ForeColor = Color.White;
                 tableInfoAuto.Controls.Add(label_modelo, 0, 1);
 
-                label_color.Text = "Color: " + auto.SelectSingleNode("Color").InnerText;                
+                label_color.Text = "Color: " + auto.SelectSingleNode("Color").InnerText;
+                label_color.ForeColor = Color.White;
                 tableInfoAuto.Controls.Add(label_color, 0, 2);
 
-                label_placas.Text = "Placas: " + auto.SelectSingleNode("Placas").InnerText;                
+                label_placas.Text = "Placas: " + auto.SelectSingleNode("Placas").InnerText;
+                label_placas.ForeColor = Color.White;
                 tableInfoAuto.Controls.Add(label_placas, 0, 3);
 
-                label_anio.Text = "Año: " + auto.SelectSingleNode("Anio").InnerText;                
+                label_anio.Text = "Año: " + auto.SelectSingleNode("Anio").InnerText;
+                label_anio.ForeColor = Color.White;
                 tableInfoAuto.Controls.Add(label_anio, 0, 4);
 
-                label_precio.Text = "Precio: " + auto.SelectSingleNode("Precio").InnerText;                
+                label_precio.Text = "Precio: " + auto.SelectSingleNode("Precio").InnerText;
+                label_precio.ForeColor = Color.White;
                 tableInfoAuto.Controls.Add(label_precio, 0, 5);
 
                 //Se evalua que el usuario no este rentando un auto, si es así los botones estaran deshabilitados
 
                 //Se le agrega al botón para rentar un nombre correspondiente al id del auto
                 button_rentar.Name = auto.Attributes["id"].Value;
-                button_rentar.BackColor = Color.Orange;
                 button_rentar.BorderRadius = 5;
                 //Si el auto esta disponible el auto se renta
                 if (auto.SelectSingleNode("Disponible").InnerText == "Libre")
