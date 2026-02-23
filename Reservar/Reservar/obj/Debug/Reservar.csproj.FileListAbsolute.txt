@@ -1,0 +1,15 @@
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\bin\Debug\Reservar.exe.config
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\bin\Debug\Reservar.exe
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\bin\Debug\Reservar.pdb
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.csproj.AssemblyReference.cache
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.My_controls.My_textBox.resources
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.Properties.Resources.resources
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.csproj.GenerateResource.cache
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.csproj.CoreCompileInputs.cache
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.exe
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.pdb
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.Sign_in_up.resources
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.Sign_up.resources
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.Main_page.resources
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.Form_autos.resources
+C:\Users\Diabetes\OneDrive\Documentos\uaa\semestre_2\Lenguajes\c#\Reservar\Reservar\obj\Debug\Reservar.FormModificar.resources

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User id="2">
+    <nombre>admin</nombre>
+    <correo>admin@gmail.com</correo>
+    <password>admin</password>
+    <Idauto>
+    </Idauto>
+    <Admin>1</Admin>
+  </User>
+  <User id="3">
+    <nombre>zahid</nombre>
+    <correo>z@gmail.com</correo>
+    <password>123</password>
+    <Idauto>
+    </Idauto>
+    <Admin>0</Admin>
+  </User>
+  <User id="4">
+    <nombre>Leonardo</nombre>
+    <correo>leo@gmail.com</correo>
+    <password>123</password>
+    <Idauto>
+    </Idauto>
+    <Admin>0</Admin>
+  </User>
+  <User id="5">
+    <nombre>zahid</nombre>
+    <correo>zahid@gmail.com</correo>
+    <password>123</password>
+    <Idauto>
+    </Idauto>
+    <Admin>0</Admin>
+  </User>
+</Users>

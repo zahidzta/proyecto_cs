@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Autos>
+  <Auto id="1">
+    <Marca>Nissan</Marca>
+    <Modelo>Sentra</Modelo>
+    <Color>Rojo</Color>
+    <Placas>RDI0G4</Placas>
+    <Anio>2020</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1500</Precio>
+  </Auto>
+  <Auto id="2">
+    <Marca>Honda</Marca>
+    <Modelo>Civic</Modelo>
+    <Color>Azul</Color>
+    <Placas>HD23C4</Placas>
+    <Anio>2018</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1800</Precio>
+  </Auto>
+  <Auto id="3">
+    <Marca>Toyota</Marca>
+    <Modelo>Corolla</Modelo>
+    <Color>Blanco</Color>
+    <Placas>TY56L8</Placas>
+    <Anio>2019</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1600</Precio>
+  </Auto>
+  <Auto id="4">
+    <Marca>Ford</Marca>
+    <Modelo>Focus</Modelo>
+    <Color>Negro</Color>
+    <Placas>FD89X1</Placas>
+    <Anio>2017</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1400</Precio>
+  </Auto>
+  <Auto id="5">
+    <Marca>Chevrolet</Marca>
+    <Modelo>Malibu</Modelo>
+    <Color>Gris</Color>
+    <Placas>CH77Y9</Placas>
+    <Anio>2021</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1700</Precio>
+  </Auto>
+  <Auto id="6">
+    <Marca>Kia</Marca>
+    <Modelo>Forte</Modelo>
+    <Color>Verde</Color>
+    <Placas>KI23T6</Placas>
+    <Anio>2016</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1300</Precio>
+  </Auto>
+  <Auto id="7">
+    <Marca>Hyundai</Marca>
+    <Modelo>Elantra</Modelo>
+    <Color>Plateado</Color>
+    <Placas>HY12U4</Placas>
+    <Anio>2019</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1500</Precio>
+  </Auto>
+  <Auto id="8">
+    <Marca>Volkswagen</Marca>
+    <Modelo>Jetta</Modelo>
+    <Color>Azul</Color>
+    <Placas>VW33P5</Placas>
+    <Anio>2018</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1600</Precio>
+  </Auto>
+  <Auto id="9">
+    <Marca>Mazda</Marca>
+    <Modelo>3</Modelo>
+    <Color>Rojo</Color>
+    <Placas>MZ44L7</Placas>
+    <Anio>2020</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1700</Precio>
+  </Auto>
+  <Auto id="10">
+    <Marca>Subaru</Marca>
+    <Modelo>Impreza</Modelo>
+    <Color>Blanco</Color>
+    <Placas>SU23R5</Placas>
+    <Anio>2017</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>1800</Precio>
+  </Auto>
+  <Auto id="11">
+    <Marca>Nissan</Marca>
+    <Modelo>Tsuru</Modelo>
+    <Color>rojo</Color>
+    <Placas>12hh12</Placas>
+    <Anio>1980</Anio>
+    <Disponible>Libre</Disponible>
+    <IdUsuario>
+    </IdUsuario>
+    <Precio>3000</Precio>
+  </Auto>
+</Autos>

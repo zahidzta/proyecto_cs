@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User id="2">
+    <nombre>admin</nombre>
+    <correo>admin@gmail.com</correo>
+    <password>admin</password>
+    <Idauto>
+    </Idauto>
+    <Admin>1</Admin>
+  </User>
+</Users>
